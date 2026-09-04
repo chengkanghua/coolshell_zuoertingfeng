@@ -1,0 +1,3986 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../075-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9A%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86/">
+      
+      
+        <link rel="next" href="../077-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9ALinux%E7%B3%BB%E7%BB%9F%E3%80%81%E5%86%85%E5%AD%98%E5%92%8C%E7%BD%91%E7%BB%9C/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>76-程序员练级攻略：软件设计 - 左耳听风</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#76-" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="左耳听风" class="md-header__button md-logo" aria-label="左耳听风" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            左耳听风
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              76-程序员练级攻略：软件设计
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="左耳听风" class="md-nav__button md-logo" aria-label="左耳听风" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    左耳听风
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../000-1%E7%9B%AE%E5%BD%95/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    000-1目录
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../000-2%E7%AE%80%E4%BB%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    000-2简介
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../000-%E5%BC%80%E7%AF%87%E8%AF%8D-%E6%B4%9E%E6%82%89%E6%8A%80%E6%9C%AF%E7%9A%84%E6%9C%AC%E8%B4%A8%EF%BC%8C%E4%BA%AB%E5%8F%97%E7%A7%91%E6%8A%80%E7%9A%84%E4%B9%90%E8%B6%A3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    000开篇词-洞悉技术的本质，享受科技的乐趣
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../001-%E7%A8%8B%E5%BA%8F%E5%91%98%E5%A6%82%E4%BD%95%E7%94%A8%E6%8A%80%E6%9C%AF%E5%8F%98%E7%8E%B0%EF%BC%88%E4%B8%8A%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01-程序员如何用技术变现（上）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../002-%E7%A8%8B%E5%BA%8F%E5%91%98%E5%A6%82%E4%BD%95%E7%94%A8%E6%8A%80%E6%9C%AF%E5%8F%98%E7%8E%B0%EF%BC%88%E4%B8%8B%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02-程序员如何用技术变现（下）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../003-Equifax%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2%E5%A7%8B%E6%9C%AB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03-Equifax信息泄露始末
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../004-%E4%BB%8EEquifax%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2%E7%9C%8B%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04-从Equifax信息泄露看数据安全
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../005-%E4%BD%95%E4%B8%BA%E6%8A%80%E6%9C%AF%E9%A2%86%E5%AF%BC%E5%8A%9B%EF%BC%9F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05-何为技术领导力？
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../006-%E5%A6%82%E4%BD%95%E6%89%8D%E8%83%BD%E6%8B%A5%E6%9C%89%E6%8A%80%E6%9C%AF%E9%A2%86%E5%AF%BC%E5%8A%9B%EF%BC%9F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06-如何才能拥有技术领导力？
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07-推荐阅读：每个程序员都该知道的知识
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../008-Go%E8%AF%AD%E8%A8%80%EF%BC%8CDocker%E5%92%8C%E6%96%B0%E6%8A%80%E6%9C%AF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08-Go语言，Docker和新技术
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../009-%E7%AD%94%E7%96%91%E8%A7%A3%E6%83%91%EF%BC%9A%E6%B8%B4%E6%9C%9B%E3%80%81%E7%83%AD%E6%83%85%E5%92%8C%E9%80%89%E6%8B%A9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09-答疑解惑：渴望、热情和选择
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../010-%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E4%B8%80%E4%B8%AA%E5%A4%A7%E5%AE%B6%E6%84%BF%E6%84%8F%E8%BF%BD%E9%9A%8F%E7%9A%84Leader%EF%BC%9F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10-如何成为一个大家愿意追随的Leader？
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../011-%E7%A8%8B%E5%BA%8F%E4%B8%AD%E7%9A%84%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86%EF%BC%9A%E9%94%99%E8%AF%AF%E8%BF%94%E5%9B%9E%E7%A0%81%E5%92%8C%E5%BC%82%E5%B8%B8%E6%8D%95%E6%8D%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11-程序中的错误处理：错误返回码和异常捕捉
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../012-%E7%A8%8B%E5%BA%8F%E4%B8%AD%E7%9A%84%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86%EF%BC%9A%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B%E4%BB%A5%E5%8F%8A%E6%88%91%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12-程序中的错误处理：异步编程以及我的最佳实践
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../013-%E9%AD%94%E6%95%B00x5f3759df/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13-魔数0x5f3759df
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../014-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0101/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14-推荐阅读：机器学习101
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../015-%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86%EF%BC%9A%E5%90%8C%E6%89%AD%E6%9B%B2%E6%97%B6%E9%97%B4%E7%9A%84%E4%BA%8B%E5%84%BF%E6%8A%97%E4%BA%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15-时间管理：同扭曲时间的事儿抗争
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../016-%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86%EF%BC%9A%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8%E5%A5%BD%E8%87%AA%E5%B7%B1%E7%9A%84%E6%97%B6%E9%97%B4%EF%BC%9F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16-时间管理：如何利用好自己的时间？
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../017-%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%EF%BC%9A%E5%BA%94%E5%AF%B9%E6%95%85%E9%9A%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    17-故障处理最佳实践：应对故障
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../018-%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%EF%BC%9A%E6%95%85%E9%9A%9C%E6%94%B9%E8%BF%9B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    18-故障处理最佳实践：故障改进
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../019-%E7%AD%94%E7%96%91%E8%A7%A3%E6%83%91%EF%BC%9A%E6%88%91%E4%BB%AC%E5%BA%94%E8%AF%A5%E8%83%BD%E5%A4%9F%E8%AF%86%E5%88%AB%E7%9A%84%E8%A1%A8%E8%B1%A1%E5%92%8C%E6%9C%AC%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    19-答疑解惑：我们应该能够识别的表象和本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    20-Git协同工作流，你该怎么选？
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../021-%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E7%9A%84%E5%86%B0%E4%B8%8E%E7%81%AB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    21-分布式系统架构的冰与火
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../022-%E4%BB%8E%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%9A%84%E5%AE%9E%E8%B7%B5%EF%BC%8C%E8%B0%88%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%9A%BE%E7%82%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    22-从亚马逊的实践，谈分布式系统的难点
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../023-%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%8A%80%E6%9C%AF%E6%A0%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    23-分布式系统的技术栈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../024-%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF%EF%BC%9A%E5%85%A8%E6%A0%88%E7%9B%91%E6%8E%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    24-分布式系统关键技术：全栈监控
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../025-%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF%EF%BC%9A%E6%9C%8D%E5%8A%A1%E8%B0%83%E5%BA%A6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    25-分布式系统关键技术：服务调度
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../026-%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF%EF%BC%9A%E6%B5%81%E9%87%8F%E4%B8%8E%E6%95%B0%E6%8D%AE%E8%B0%83%E5%BA%A6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    26-分布式系统关键技术：流量与数据调度
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../027-%E6%B4%9E%E6%82%89PaaS%E5%B9%B3%E5%8F%B0%E7%9A%84%E6%9C%AC%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    27-洞悉PaaS平台的本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../028-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E7%BB%8F%E5%85%B8%E8%B5%84%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    28-推荐阅读：分布式系统架构经典资料
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../029-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E5%88%86%E5%B8%83%E5%BC%8F%E6%95%B0%E6%8D%AE%E8%B0%83%E5%BA%A6%E7%9B%B8%E5%85%B3%E8%AE%BA%E6%96%87/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    29-推荐阅读：分布式数据调度相关论文
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../030-%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E6%B8%B8%E8%AE%B0%EF%BC%881%EF%BC%89-%E8%B5%B7%E6%BA%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    30-编程范式游记（1）-起源
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../031-%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E6%B8%B8%E8%AE%B0%EF%BC%882%EF%BC%89-%E6%B3%9B%E5%9E%8B%E7%BC%96%E7%A8%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    31-编程范式游记（2）-泛型编程
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../032-%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E6%B8%B8%E8%AE%B0%EF%BC%883%EF%BC%89-%E7%B1%BB%E5%9E%8B%E7%B3%BB%E7%BB%9F%E5%92%8C%E6%B3%9B%E5%9E%8B%E7%9A%84%E6%9C%AC%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    32-编程范式游记（3）-类型系统和泛型的本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../033-%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E6%B8%B8%E8%AE%B0%EF%BC%884%EF%BC%89-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    33-编程范式游记（4）-函数式编程
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../034-%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E6%B8%B8%E8%AE%B0%EF%BC%885%EF%BC%89-%E4%BF%AE%E9%A5%B0%E5%99%A8%E6%A8%A1%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    34-编程范式游记（5）-修饰器模式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../035-%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E6%B8%B8%E8%AE%B0%EF%BC%886%EF%BC%89-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    35-编程范式游记（6）-面向对象编程
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../036-%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E6%B8%B8%E8%AE%B0%EF%BC%887%EF%BC%89-%E5%9F%BA%E4%BA%8E%E5%8E%9F%E5%9E%8B%E7%9A%84%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    36-编程范式游记（7）-基于原型的编程范式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../037-%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E6%B8%B8%E8%AE%B0%EF%BC%888%EF%BC%89-Go%E8%AF%AD%E8%A8%80%E7%9A%84%E5%A7%94%E6%89%98%E6%A8%A1%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    37-编程范式游记（8）-Go语言的委托模式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../038-%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E6%B8%B8%E8%AE%B0%EF%BC%889%EF%BC%89-%E7%BC%96%E7%A8%8B%E7%9A%84%E6%9C%AC%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    38-编程范式游记（9）-编程的本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../039-%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E6%B8%B8%E8%AE%B0%EF%BC%8810%EF%BC%89-%E9%80%BB%E8%BE%91%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    39-编程范式游记（10）-逻辑编程范式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../040-%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E6%B8%B8%E8%AE%B0%EF%BC%8811%EF%BC%89-%E7%A8%8B%E5%BA%8F%E4%B8%96%E7%95%8C%E9%87%8C%E7%9A%84%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    40-编程范式游记（11）-程序世界里的编程范式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../041-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E8%AE%A4%E8%AF%86%E6%95%85%E9%9A%9C%E5%92%8C%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    41-弹力设计篇之“认识故障和弹力设计”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../042-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%9A%94%E7%A6%BB%E8%AE%BE%E8%AE%A1%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    42-弹力设计篇之“隔离设计”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../043-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E5%BC%82%E6%AD%A5%E9%80%9A%E8%AE%AF%E8%AE%BE%E8%AE%A1%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    43-弹力设计篇之“异步通讯设计”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../044-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E5%B9%82%E7%AD%89%E6%80%A7%E8%AE%BE%E8%AE%A1%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    44-弹力设计篇之“幂等性设计”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../045-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E6%9C%8D%E5%8A%A1%E7%9A%84%E7%8A%B6%E6%80%81%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    45-弹力设计篇之“服务的状态”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../046-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E8%A1%A5%E5%81%BF%E4%BA%8B%E5%8A%A1%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    46-弹力设计篇之“补偿事务”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../047-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%87%8D%E8%AF%95%E8%AE%BE%E8%AE%A1%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    47-弹力设计篇之“重试设计”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../048-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E7%86%94%E6%96%AD%E8%AE%BE%E8%AE%A1%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    48-弹力设计篇之“熔断设计”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../049-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%99%90%E6%B5%81%E8%AE%BE%E8%AE%A1%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    49-弹力设计篇之“限流设计”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../050-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%99%8D%E7%BA%A7%E8%AE%BE%E8%AE%A1%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    50-弹力设计篇之“降级设计”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../051-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E6%80%BB%E7%BB%93%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    51-弹力设计篇之“弹力设计总结”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../052-%E7%AE%A1%E7%90%86%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    52-管理设计篇之“分布式锁”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../053-%E7%AE%A1%E7%90%86%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    53-管理设计篇之“配置中心”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../054-%E7%AE%A1%E7%90%86%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E8%BE%B9%E8%BD%A6%E6%A8%A1%E5%BC%8F%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    54-管理设计篇之“边车模式”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../055-%E7%AE%A1%E7%90%86%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E6%9C%8D%E5%8A%A1%E7%BD%91%E6%A0%BC%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    55-管理设计篇之“服务网格”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../056-%E7%AE%A1%E7%90%86%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E7%BD%91%E5%85%B3%E6%A8%A1%E5%BC%8F%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    56-管理设计篇之“网关模式”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../057-%E7%AE%A1%E7%90%86%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%83%A8%E7%BD%B2%E5%8D%87%E7%BA%A7%E7%AD%96%E7%95%A5%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    57-管理设计篇之“部署升级策略”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../058-%E6%80%A7%E8%83%BD%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E7%BC%93%E5%AD%98%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    58-性能设计篇之“缓存”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../059-%E6%80%A7%E8%83%BD%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E5%BC%82%E6%AD%A5%E5%A4%84%E7%90%86%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    59-性能设计篇之“异步处理”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../060-%E6%80%A7%E8%83%BD%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E6%95%B0%E6%8D%AE%E5%BA%93%E6%89%A9%E5%B1%95%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    60-性能设计篇之“数据库扩展”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../061-%E6%80%A7%E8%83%BD%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E7%A7%92%E6%9D%80%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    61-性能设计篇之“秒杀”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../062-%E6%80%A7%E8%83%BD%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    62-性能设计篇之“边缘计算”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../063-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%9A%84%E6%9C%AC%E8%B4%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    63-区块链技术的本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    64-区块链技术细节：哈希算法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../065-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%8A%A0%E5%AF%86%E5%92%8C%E6%8C%96%E7%9F%BF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    65-区块链技术细节：加密和挖矿
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../066-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    66-区块链技术细节：去中心化的共识机制
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../067-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    67-区块链技术细节：智能合约
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../068-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF-%E4%BC%A0%E7%BB%9F%E9%87%91%E8%9E%8D%E5%92%8C%E8%99%9A%E6%8B%9F%E8%B4%A7%E5%B8%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    68-区块链技术-传统金融和虚拟货币
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../069-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9A%E5%BC%80%E7%AF%87%E8%AF%8D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    69-程序员练级攻略：开篇词
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../070-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9A%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%90%AF%E8%92%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    70-程序员练级攻略：零基础启蒙
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../071-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9A%E6%AD%A3%E5%BC%8F%E5%85%A5%E9%97%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    71-程序员练级攻略：正式入门
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../072-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9A%E7%A8%8B%E5%BA%8F%E5%91%98%E4%BF%AE%E5%85%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    72-程序员练级攻略：程序员修养
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../073-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9A%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    73-程序员练级攻略：编程语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../074-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9A%E7%90%86%E8%AE%BA%E5%AD%A6%E7%A7%91/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    74-程序员练级攻略：理论学科
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../075-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9A%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    75-程序员练级攻略：系统知识
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    76-程序员练级攻略：软件设计
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    76-程序员练级攻略：软件设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        编程范式
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一些软件设计的相关原则
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一些软件设计的读物
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        小结
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../077-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9ALinux%E7%B3%BB%E7%BB%9F%E3%80%81%E5%86%85%E5%AD%98%E5%92%8C%E7%BD%91%E7%BB%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    77-程序员练级攻略：Linux系统、内存和网络
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../078-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9A%E5%BC%82%E6%AD%A5IO%E6%A8%A1%E5%9E%8B%E5%92%8CLock-Free%E7%BC%96%E7%A8%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    78-程序员练级攻略：异步IO模型和Lock-Free编程
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../079-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9AJava%E5%BA%95%E5%B1%82%E7%9F%A5%E8%AF%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    79-程序员练级攻略：Java底层知识
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../080-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9A%E6%95%B0%E6%8D%AE%E5%BA%93/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    80-程序员练级攻略：数据库
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../081-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9A%E5%88%86%E5%B8%83%E5%BC%8F%E6%9E%B6%E6%9E%84%E5%85%A5%E9%97%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    81-程序员练级攻略：分布式架构入门
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../082-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9A%E5%88%86%E5%B8%83%E5%BC%8F%E6%9E%B6%E6%9E%84%E7%BB%8F%E5%85%B8%E5%9B%BE%E4%B9%A6%E5%92%8C%E8%AE%BA%E6%96%87/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    82-程序员练级攻略：分布式架构经典图书和论文
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../083-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9A%E5%88%86%E5%B8%83%E5%BC%8F%E6%9E%B6%E6%9E%84%E5%B7%A5%E7%A8%8B%E8%AE%BE%E8%AE%A1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    83-程序员练级攻略：分布式架构工程设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../084-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9A%E5%BE%AE%E6%9C%8D%E5%8A%A1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    84-程序员练级攻略：微服务
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../085-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9A%E5%AE%B9%E5%99%A8%E5%8C%96%E5%92%8C%E8%87%AA%E5%8A%A8%E5%8C%96%E8%BF%90%E7%BB%B4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    85-程序员练级攻略：容器化和自动化运维
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../086-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9A%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%92%8C%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    86-程序员练级攻略：机器学习和人工智能
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../087-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9A%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E5%92%8C%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    87-程序员练级攻略：前端基础和底层原理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../088-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9A%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%92%8C%E6%A1%86%E6%9E%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    88-程序员练级攻略：前端性能优化和框架
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../089-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9AUIUX%E8%AE%BE%E8%AE%A1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    89-程序员练级攻略：UIUX设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../090-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%EF%BC%9A%E6%8A%80%E6%9C%AF%E8%B5%84%E6%BA%90%E9%9B%86%E6%95%A3%E5%9C%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    90-程序员练级攻略：技术资源集散地
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../091-%E7%A8%8B%E5%BA%8F%E5%91%98%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%E7%9A%84%E6%AD%A3%E7%A1%AE%E6%89%93%E5%BC%80%E6%96%B9%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    91-程序员练级攻略的正确打开方式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../092-%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E6%94%BB%E7%95%A5%EF%BC%9A%E9%9D%A2%E8%AF%95%E5%89%8D%E7%9A%84%E5%87%86%E5%A4%87/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    92-程序员面试攻略：面试前的准备
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../093-%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E6%94%BB%E7%95%A5%EF%BC%9A%E9%9D%A2%E8%AF%95%E4%B8%AD%E7%9A%84%E6%8A%80%E5%B7%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    93-程序员面试攻略：面试中的技巧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../094-%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E6%94%BB%E7%95%A5%EF%BC%9A%E9%9D%A2%E8%AF%95%E9%A3%8E%E6%A0%BC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    94-程序员面试攻略：面试风格
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../095-%E7%A8%8B%E5%BA%8F%E5%91%98%E9%9D%A2%E8%AF%95%E6%94%BB%E7%95%A5%EF%BC%9A%E5%AE%9E%E5%8A%9B%E6%89%8D%E6%98%AF%E7%8E%8B%E4%B8%AD%E7%8E%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    95-程序员面试攻略：实力才是王中王
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../096-%E9%AB%98%E6%95%88%E5%AD%A6%E4%B9%A0%EF%BC%9A%E7%AB%AF%E6%AD%A3%E5%AD%A6%E4%B9%A0%E6%80%81%E5%BA%A6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    96-高效学习：端正学习态度
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../097-%E9%AB%98%E6%95%88%E5%AD%A6%E4%B9%A0%EF%BC%9A%E6%BA%90%E5%A4%B4%E3%80%81%E5%8E%9F%E7%90%86%E5%92%8C%E7%9F%A5%E8%AF%86%E5%9C%B0%E5%9B%BE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    97-高效学习：源头、原理和知识地图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../098-%E9%AB%98%E6%95%88%E5%AD%A6%E4%B9%A0%EF%BC%9A%E6%B7%B1%E5%BA%A6%EF%BC%8C%E5%BD%92%E7%BA%B3%E5%92%8C%E5%9D%9A%E6%8C%81%E5%AE%9E%E8%B7%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    98-高效学习：深度，归纳和坚持实践
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../099-%E9%AB%98%E6%95%88%E5%AD%A6%E4%B9%A0%EF%BC%9A%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E5%92%8C%E9%98%85%E8%AF%BB%E4%BB%A3%E7%A0%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    99-高效学习：如何学习和阅读代码
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../100-%E9%AB%98%E6%95%88%E5%AD%A6%E4%B9%A0%EF%BC%9A%E9%9D%A2%E5%AF%B9%E6%9E%AF%E7%87%A5%E5%92%8C%E9%87%8F%E5%A4%A7%E7%9A%84%E7%9F%A5%E8%AF%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    100-高效学习：面对枯燥和量大的知识
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../101-%E9%AB%98%E6%95%88%E6%B2%9F%E9%80%9A%EF%BC%9ATalk%E5%92%8CCode%E5%90%8C%E7%AD%89%E9%87%8D%E8%A6%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    101-高效沟通：Talk和Code同等重要
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../102-%E9%AB%98%E6%95%88%E6%B2%9F%E9%80%9A%EF%BC%9A%E6%B2%9F%E9%80%9A%E9%98%BB%E7%A2%8D%E5%92%8C%E5%BA%94%E5%AF%B9%E6%96%B9%E6%B3%95/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    102-高效沟通：沟通阻碍和应对方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../103-%E9%AB%98%E6%95%88%E6%B2%9F%E9%80%9A%EF%BC%9A%E6%B2%9F%E9%80%9A%E6%96%B9%E5%BC%8F%E5%8F%8A%E6%8A%80%E5%B7%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    103-高效沟通：沟通方式及技巧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../104-%E9%AB%98%E6%95%88%E6%B2%9F%E9%80%9A%EF%BC%9A%E6%B2%9F%E9%80%9A%E6%8A%80%E6%9C%AF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    104-高效沟通：沟通技术
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../105-%E9%AB%98%E6%95%88%E6%B2%9F%E9%80%9A%EF%BC%9A%E5%A5%BD%E8%80%81%E6%9D%BF%E8%A6%81%E5%96%84%E4%BA%8E%E6%8F%90%E9%97%AE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    105-高效沟通：好老板要善于提问
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../106-%E9%AB%98%E6%95%88%E6%B2%9F%E9%80%9A%EF%BC%9A%E5%A5%BD%E5%A5%BD%E8%AF%B4%E8%AF%9D%E7%9A%84%E8%89%BA%E6%9C%AF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    106-高效沟通：好好说话的艺术
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../107-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%88%87%E7%89%87%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%97%B6%E9%97%B4%E5%92%8C%E6%80%A7%E8%83%BD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    107-Go编程模式：切片、接口、时间和性能
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../108-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9A%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    108-Go编程模式：错误处理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../109-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9AFunctional%20Options/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    109-Go编程模式：Functional Options
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../110-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%A7%94%E6%89%98%E5%92%8C%E5%8F%8D%E8%BD%AC%E6%8E%A7%E5%88%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    110-Go编程模式：委托和反转控制
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../111-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9AMap-Reduce/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    111-Go编程模式：Map-Reduce
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../112-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9AGo%20Generation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    112-Go编程模式：Go Generation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../113-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9A%E4%BF%AE%E9%A5%B0%E5%99%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    113-Go编程模式：修饰器
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../114-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9APipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    114-Go编程模式：Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../115-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9AKubernetes%20Visitor%20%E6%A8%A1%E5%BC%8F%20-%20%E5%89%AF%E6%9C%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    115-Go编程模式：Kubernetes Visitor 模式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../116-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9A%E6%B3%9B%E5%9E%8B%E7%BC%96%E7%A8%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    116-Go编程模式：泛型编程
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../117-%E7%BB%93%E6%9D%9F%E8%AF%AD-%E4%B8%9A%E7%B2%BE%E4%BA%8E%E5%8B%A4%EF%BC%8C%E8%A1%8C%E6%88%90%E4%BA%8E%E6%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    117-结束语-业精于勤，行成于思
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../118-%E5%8A%A0%E9%A4%90-%E8%B0%88%E8%B0%88%E6%88%91%E7%9A%84%E2%80%9C%E4%B8%89%E8%A7%82%E2%80%9D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    118-加餐-谈谈我的“三观”
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122" >
+        
+          
+          <label class="md-nav__link" for="__nav_122" id="__nav_122_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    参考资料
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_122_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_122">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    参考资料
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../refer/%E7%8E%B0%E4%BB%A3%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E5%9F%BA%E4%BA%8E%E4%BA%BA%E7%B1%BB%E5%9B%A0%E7%B4%A0%E5%B7%A5%E7%A8%8B%E5%AD%A6%E5%92%8C%E5%B7%A5%E4%B8%9A%E8%AE%BE%E8%AE%A1%E4%B8%AD%E7%9A%84%E5%AE%9E%E8%AF%81%E5%8E%9F%E5%88%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代用户体验设计基于人类因素工程学和工业设计中的实证原则
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../refer/%E7%BF%BB%E8%AF%91%EF%BC%9A%E6%AF%8F%E4%B8%AA%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E4%B8%93%E4%B8%9A%E7%9A%84%E5%AD%A6%E7%94%9F%E9%83%BD%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    每个计算机科学专业的学生都应该知道的
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        编程范式
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一些软件设计的相关原则
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一些软件设计的读物
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        小结
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="76-">76-程序员练级攻略：软件设计</h1>
+<p>学习软件设计的方法、理念、范式和模式，是让你从一个程序员通向工程师的必备技能。如果你不懂这些设计方法，那么你将无法做出优质的软件。这就好像写作文一样，文章人人都能写，但是能写得有条理，有章法，有血有肉，就不简单了。软件开发也一样，实现功能，做出来并不难，但是要做漂亮，做优雅，就非常不容易了。</p>
+<p>Linus说过，这世界程序员之所有高下之分，最大的区别就是程序员的“品味”不一样。有品位的程序员和没有品位的程序员写出来的代码，做出来的软件，差距非常大。<strong>所以，如果你想成为一名优秀的程序员，软件设计定是你的必修课</strong>。</p>
+<p>然而，软件设计这个事，并不是一朝一夕就能学会的，也不是别人能把你教会的，很多东西需要你自己用实践、用时间、用错误、用教训、用痛苦才能真正体会其中的精髓。所以，除了学习理论知识外，你还需要大量的工程实践，然后每过一段时间就把这些设计的东西重新回炉一下。你会发现这些软件设计的东西，就像饮茶一样，一开始是苦的，然后慢慢回甘，最终你会喝出真正的滋味。</p>
+<p><strong>要学好这些软件开发和设计的方法，你真的需要磨练和苦行，反复咀嚼，反复推敲，在实践和理论中螺旋式地学习，才能真正掌握。</strong> 所以，你需要有足够的耐心和恒心。</p>
+<h2 id="_1">编程范式</h2>
+<p>学习编程范式可以让你明白编程的本质和各种语言的编程方式。因此，我推荐以下一些资料，以帮助你系统化地学习和理解。</p>
+<ul>
+<li>
+<p>一个是我在极客时间写的《编程范式游记》系列文章，目录如下。</p>
+</li>
+<li>
+<p><a href="https://time.geekbang.org/column/article/301">编程范式游记（1）- 起源</a></p>
+</li>
+<li><a href="https://time.geekbang.org/column/article/303">编程范式游记（2）- 泛型编程</a></li>
+<li><a href="https://time.geekbang.org/column/article/2017">编程范式游记（3）- 类型系统和泛型的本质</a></li>
+<li><a href="https://time.geekbang.org/column/article/2711">编程范式游记（4）- 函数式编程</a></li>
+<li><a href="https://time.geekbang.org/column/article/2723">编程范式游记（5）- 修饰器模式</a></li>
+<li><a href="https://time.geekbang.org/column/article/2729">编程范式游记（6）- 面向对象编程</a></li>
+<li><a href="https://time.geekbang.org/column/article/2741">编程范式游记（7）- 基于原型的编程范式</a></li>
+<li><a href="https://time.geekbang.org/column/article/2748">编程范式游记（8）- Go 语言的委托模式</a></li>
+<li><a href="https://time.geekbang.org/column/article/2751">编程范式游记（9）- 编程的本质</a></li>
+<li><a href="https://time.geekbang.org/column/article/2752">编程范式游记（10）- 逻辑编程范式</a></li>
+<li>
+<p><a href="https://time.geekbang.org/column/article/2754">编程范式游记（11）- 程序世界里的编程范式</a></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Programming_paradigm">Wikipedia: Programming paradigm</a> ，维基百科上有一个编程范式的页面，顺着这个页面看下去，你可以看到很多很多有用的和编程相关的知识。这些东西对你的编程技能的提高会非常非常有帮助。</p>
+</li>
+<li>
+<p><a href="https://www.ybrikman.com/writing/2014/04/09/six-programming-paradigms-that-will/">Six programming paradigms that will change how you think about coding</a>，中文翻译版为 <a href="https://my.oschina.net/editorial-story/blog/890965">六个编程范型将改变你对编程的看法</a>。这篇文章讲了默认支持并发（Concurrent by default）、依赖类型（Dependent types）、连接性语言（Concatenative languages）、声明式编程（Declarative programming）、符号式编程（Symbolic programming）、基于知识的编程（Knowledge-based programming）等六种不太常见的编程范式，并结合了一些你没怎么听说过的语言来分别进行讲述。</p>
+</li>
+</ul>
+<p>比如在讲Concatenative languages时，以Forth、cat和joy三种语言为例讲述这一编程范式背后的思想——语言中的所有内容都是一个函数，用于将数据推送到堆栈或从堆栈弹出数据；程序几乎完全通过功能组合来构建（concatenation is composition）。作者认为，这些编程范式背后的思想十分有魅力，能够改变对编程的思考。我看完此文，对此也深信不疑。虽然这些语言和编程范式不常用到，但确实能在思想层面给予人很大的启发。这也是我推荐此文的目的。</p>
+<ul>
+<li><a href="https://www.info.ucl.ac.be/~pvr/VanRoyChapter.pdf">Programming Paradigms for Dummies: What Every Programmer Should Know</a> ，这篇文章的作者彼得·范·罗伊（Peter Van Roy）是比利时鲁汶大学的计算机科学教师。他在这篇文章里分析了编程语言在历史上的演进，有哪些典型的、值得研究的案例，里面体现了哪些值得学习的范式。</li>
+</ul>
+<p>比如，在分布式编程领域，他提到了Erlang、E、Distributed Oz和Didactic Oz这四种编程语言。虽然它们都是分布式编程语言，但各有特色，各自解决了不同的问题。通过这篇文章能学到不少在设计编程语言时要考虑的问题，让你重新审视自己所使用的编程语言应该怎样用才能用好，有什么局限性，这些局限性能否被克服等。</p>
+<ul>
+<li><a href="http://open.163.com/special/opencourse/paradigms.html">斯坦福大学公开课：编程范式</a>，这是一门比较基础且很详细的课程，适合学习编程语言的初学者。它通过讲述C、C++、并发编程、Scheme、Python这5门语言，介绍了它们各自不同的编程范式。以C语言为例，它解释了C语言的基本要素，如指针、内存分配、堆、C风格的字符串等，并解释了为什么C语言会在泛型编程、多态等方面有局限性。通过学习这门课程，你会对一些常用的编程范式有所了解。</li>
+</ul>
+<h2 id="_2">一些软件设计的相关原则</h2>
+<ul>
+<li>
+<p><strong><a href="http://en.wikipedia.org/wiki/Don't_repeat_yourself">Don’t Repeat Yourself (DRY) </a></strong>，DRY是一个最简单的法则，也是最容易被理解的。但它也可能是最难被应用的（因为要做到这样，我们需要在泛型设计上做相当的努力，这并不是一件容易的事）。它意味着，当在两个或多个地方发现一些相似代码的时候，我们需要把它们的共性抽象出来形成一个唯一的新方法，并且改变现有地方的代码让它们以一些合适的参数调用这个新的方法。</p>
+</li>
+<li>
+<p><strong><a href="http://en.wikipedia.org/wiki/KISS_principle">Keep It Simple, Stupid(KISS)</a></strong> ，KISS原则在设计上可能最被推崇，在家装设计、界面设计和操作设计上，复杂的东西越来越被众人所鄙视了，而简单的东西越来越被人所认可。宜家（IKEA）简约、高效的家居设计和生产思路；微软（Microsoft）“所见即所得”的理念；谷歌（Google）简约、直接的商业风格，无一例外地遵循了“KISS”原则。也正是“KISS”原则，成就了这些看似神奇的商业经典。而苹果公司的iPhone和iPad将这个原则实践到了极至。</p>
+</li>
+<li>
+<p><strong>Program to an interface, not an implementation</strong>，这是设计模式中最根本的哲学，注重接口，而不是实现，依赖接口，而不是实现。接口是抽象是稳定的，实现则是多种多样的。在面向对象的S.O.L.I.D原则中会提到我们的依赖倒置原则，就是这个原则的另一种样子。还有一条原则叫 Composition over inheritance（喜欢组合而不是继承），这两条是那23个经典设计模式中的设计原则。</p>
+</li>
+<li>
+<p><strong><a href="http://en.wikipedia.org/wiki/You_Ain't_Gonna_Need_It">You Ain’t Gonna Need It (YAGNI)</a></strong> ，这个原则简而言之为——只考虑和设计必须的功能，避免过度设计。只实现目前需要的功能，在以后你需要更多功能时，可以再进行添加。如无必要，勿增复杂性。软件开发是一场trade-off的博弈。</p>
+</li>
+<li>
+<p><strong><a href="http://en.wikipedia.org/wiki/Principle_of_Least_Knowledge">Law of Demeter</a></strong>，迪米特法则(Law of Demeter)，又称“最少知识原则”（Principle of Least Knowledge），其来源于1987年荷兰大学的一个叫做Demeter的项目。克雷格·拉尔曼（Craig Larman）把Law of Demeter又称作“不要和陌生人说话”。在《程序员修炼之道》中讲LoD的那一章将其叫作“解耦合与迪米特法则”。</p>
+</li>
+</ul>
+<p>关于迪米特法则有一些很形象的比喻：1) 如果你想让你的狗跑的话，你会对狗狗说还是对四条狗腿说？2) 如果你去店里买东西，你会把钱交给店员，还是会把钱包交给店员让他自己拿？和狗的四肢说话？让店员自己从钱包里拿钱？这听起来有点儿荒唐，不过在我们的代码里这几乎是见怪不怪的事情了。对于LoD，正式的表述如下：</p>
+<p>对于对象 ‘O’ 中一个方法’M’，M应该只能够访问以下对象中的方法：</p>
+<ol>
+<li>对象O；</li>
+<li>与O直接相关的Component Object；</li>
+<li>由方法M创建或者实例化的对象；</li>
+<li>
+<p>作为方法M的参数的对象。</p>
+</li>
+<li>
+<p><strong><a href="clbr://internal.sandbox/book/text/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX">面向对象的S.O.L.I.D 原则</a>"&gt;http://en.wikipedia.org/wiki/Solid_(object-oriented_design)</strong>：</p>
+</li>
+<li>
+<p><strong>SRP（Single Responsibility Principle）- 职责单一原则</strong>。关于单一职责原则，其核心的思想是：一个类，只做一件事，并把这件事做好，其只有一个引起它变化的原因。单一职责原则可以看作是低耦合、高内聚在面向对象原则上的引申，将职责定义为引起变化的原因，以提高内聚性来减少引起变化的原因。</p>
+</li>
+</ol>
+<p>职责过多，可能引起它变化的原因就越多，这将导致职责依赖，相互之间就产生影响，从而极大地损伤其内聚性和耦合度。单一职责，通常意味着单一的功能，因此不要为一个模块实现过多的功能点，以保证实体只有一个引起它变化的原因。</p>
+<ul>
+<li><strong>OCP（Open/Closed Principle）- 开闭原则</strong>。关于开发封闭原则，其核心的思想是：模块是可扩展的，而不可修改的。也就是说，对扩展是开放的，而对修改是封闭的。对扩展开放，意味着有新的需求或变化时，可以对现有代码进行扩展，以适应新的情况。对修改封闭，意味着类一旦设计完成，就可以独立完成其工作，而不要对类进行任何修改。</li>
+<li><strong>LSP（Liskov substitution principle）- 里氏代换原则</strong>。软件工程大师罗伯特·马丁（Robert C. Martin）把里氏代换原则最终简化为一句话：“Subtypes must be substitutable for their base types”。也就是，子类必须能够替换成它们的基类。即子类应该可以替换任何基类能够出现的地方，并且经过替换以后，代码还能正常工作。另外，不应该在代码中出现if/else之类对子类类型进行判断的条件。里氏替换原则LSP是使代码符合开闭原则的一个重要保证。正是由于子类型的可替换性才使得父类型的模块在无需修改的情况下就可以扩展。</li>
+<li><strong>ISP（Interface Segregation Principle ）- 接口隔离原则</strong>。接口隔离原则的意思是把功能实现在接口中，而不是类中，使用多个专门的接口比使用单一的总接口要好。举个例子，我们对电脑有不同的使用方式，比如：写作、通讯、看电影、打游戏、上网、编程、计算和数据存储等。</li>
+</ul>
+<p>如果我们把这些功能都声明在电脑的抽象类里面，那么，我们的上网本、PC机、服务器和笔记本的实现类都要实现所有的这些接口，这就显得太复杂了。所以，我们可以把这些功能接口隔离开来，如工作学习接口、编程开发接口、上网娱乐接口、计算和数据服务接口，这样，我们的不同功能的电脑就可以有所选择地继承这些接口。</p>
+<ul>
+<li>
+<p><strong>DIP（Dependency Inversion Principle）- 依赖倒置原则</strong>。高层模块不应该依赖于低层模块的实现，而是依赖于高层抽象。举个例子，墙面的开关不应该依赖于电灯的开关实现，而是应该依赖于一个抽象的开关的标准接口。这样，当我们扩展程序的时候，开关同样可以控制其它不同的灯，甚至不同的电器。也就是说，电灯和其它电器继承并实现我们的标准开关接口，而开关厂商就可以不需要关于其要控制什么样的设备，只需要关心那个标准的开关标准。这就是依赖倒置原则。</p>
+</li>
+<li>
+<p><a href="http://c2.com/cgi/wiki?CommonClosurePrinciple">CCP（Common Closure Principle） - 共同封闭原则</a>，一个包中所有的类应该对同一种类型的变化关闭。一个变化影响一个包，便影响了包中所有的类。一个更简短的说法是：一起修改的类，应该组合在一起（同一个包里）。如果必须修改应用程序里的代码，那么我们希望所有的修改都发生在一个包里（修改关闭），而不是遍布在很多包里。</p>
+</li>
+</ul>
+<p>CCP原则就是把因为某个同样的原因而需要修改的所有类组合进一个包里。如果两个类从物理上或者从概念上联系得非常紧密，它们通常一起发生改变，那么它们应该属于同一个包。CCP延伸了开闭原则（OCP）的“关闭”概念，当因为某个原因需要修改时，把需要修改的范围限制在一个最小范围内的包里。</p>
+<ul>
+<li><a href="http://c2.com/cgi/wiki?CommonReusePrinciple">CRP（Common Reuse Principle）- 共同重用原则</a> ，包的所有类被一起重用。如果你重用了其中的一个类，就重用全部。换个说法是，没有被一起重用的类不应该组合在一起。CRP原则帮助我们决定哪些类应该被放到同一个包里。依赖一个包就是依赖这个包所包含的一切。</li>
+</ul>
+<p>当一个包发生了改变，并发布新的版本，使用这个包的所有用户都必须在新的包环境下验证他们的工作，即使被他们使用的部分没有发生任何改变。因为如果包中包含未被使用的类，即使用户不关心该类是否改变，但用户还是不得不升级该包并对原来的功能加以重新测试。CCP则让系统的维护者受益。CCP让包尽可能大（CCP原则加入功能相关的类），CRP则让包尽可能小（CRP原则剔除不使用的类）。它们的出发点不一样，但不相互冲突。</p>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Hollywood_Principle">好莱坞原则 - Hollywood Principle</a> ，好莱坞原则就是一句话——“don’t call us, we’ll call you.”。意思是，好莱坞的经纪人不希望你去联系他们，而是他们会在需要的时候来联系你。也就是说，所有的组件都是被动的，所有的组件初始化和调用都由容器负责。</li>
+</ul>
+<p>简单来讲，就是由容器控制程序之间的关系，而非传统实现中，由程序代码直接操控。这也就是所谓“控制反转”的概念所在：1) 不创建对象，而是描述创建对象的方式。2）在代码中，对象与服务没有直接联系，而是容器负责将这些联系在一起。控制权由应用代码中转到了外部容器，控制权的转移，是所谓反转。好莱坞原则就是<a href="http://en.wikipedia.org/wiki/Inversion_of_Control">IoC（Inversion of Control）</a> 或<a href="https://martinfowler.com/articles/injection.html">DI（Dependency Injection）</a>的基础原则。</p>
+<ul>
+<li>
+<p><a href="http://en.wikipedia.org/wiki/Coupling_(computer_science)">高内聚， 低耦合&amp; - High Cohesion &amp; Low/Loose coupling</a>，这个原则是UNIX操作系统设计的经典原则，把模块间的耦合降到最低，而努力让一个模块做到精益求精。内聚，指一个模块内各个元素彼此结合的紧密程度；耦合指一个软件结构内不同模块之间互连程度的度量。内聚意味着重用和独立，耦合意味着多米诺效应牵一发动全身。对于面向对象来说，你也可以看看马萨诸塞州戈登学院的面向对象课中的这一节讲义<a href="http://www.math-cs.gordon.edu/courses/cs211/lectures-2009/Cohesion,Coupling,MVC.pdf">High Cohesion and Low Coupling</a>。</p>
+</li>
+<li>
+<p><a href="http://en.wikipedia.org/wiki/Convention_over_Configuration">CoC（Convention over Configuration）- 惯例优于配置原则</a> ，简单点说，就是将一些公认的配置方式和信息作为内部缺省的规则来使用。例如，Hibernate的映射文件，如果约定字段名和类属性一致的话，基本上就可以不要这个配置文件了。你的应用只需要指定不convention的信息即可，从而减少了大量convention而又不得不花时间和精力啰里啰嗦的东东。</p>
+</li>
+</ul>
+<p>配置文件在很多时候相当影响开发效率。Rails 中很少有配置文件（但不是没有，数据库连接就是一个配置文件）。Rails 的fans号称其开发效率是 Java 开发的 10 倍，估计就是这个原因。Maven也使用了CoC原则，当你执行 <code>mvn -compile</code> 命令的时候，不需要指定源文件放在什么地方，而编译以后的class文件放置在什么地方也没有指定，这就是CoC原则。</p>
+<ul>
+<li><a href="http://sulong.me/archives/99">SoC (Separation of Concerns) - 关注点分离</a> ，SoC 是计算机科学中最重要的努力目标之一。这个原则，就是在软件开发中，通过各种手段，将问题的各个关注点分开。如果一个问题能分解为独立且较小的问题，就是相对较易解决的。问题太过于复杂，要解决问题需要关注的点太多，而程序员的能力是有限的，不能同时关注于问题的各个方面。</li>
+</ul>
+<p>正如程序员的记忆力相对于计算机知识来说那么有限一样，程序员解决问题的能力相对于要解决的问题的复杂性也是一样的非常有限。在我们分析问题的时候，如果我们把所有的东西混在一起讨论，那么就只会有一个结果——乱。实现关注点分离的方法主要有两种，一种是标准化，另一种是抽象与包装。标准化就是制定一套标准，让使用者都遵守它，将人们的行为统一起来，这样使用标准的人就不用担心别人会有很多种不同的实现，使自己的程序不能和别人的配合。</p>
+<p>就像是开发镙丝钉的人只专注于开发镙丝钉就行了，而不用关注镙帽是怎么生产的，反正镙帽和镙丝钉按照标准来就一定能合得上。不断地把程序的某些部分抽象并包装起来，也是实现关注点分离的好方法。一旦一个函数被抽象出来并实现了，那么使用函数的人就不用关心这个函数是如何实现的。同样的，一旦一个类被抽象并实现了，类的使用者也不用再关注于这个类的内部是如何实现的。诸如组件、分层、面向服务等这些概念都是在不同的层次上做抽象和包装，以使得使用者不用关心它的内部实现细节。</p>
+<ul>
+<li>
+<p><a href="http://en.wikipedia.org/wiki/Design_by_contract">DbC（Design by Contract）- 契约式设计</a> ，DbC的核心思想是对软件系统中的元素之间相互合作以及“责任”与“义务”的比喻。这种比喻从商业活动中“客户”与“供应商”达成“契约”而得来。如果在程序设计中一个模块提供了某种功能，那么它要：</p>
+</li>
+<li>
+<p>期望所有调用它的客户模块都保证一定的进入条件：这就是模块的先验条件（客户的义务和供应商的权利，这样它就不用去处理不满足先验条件的情况）。</p>
+</li>
+<li>保证退出时给出特定的属性：这就是模块的后验条件（供应商的义务，显然也是客户的权利）。</li>
+<li>
+<p>在进入时假定，并在退出时保持一些特定的属性：不变式。</p>
+</li>
+<li>
+<p><a href="http://c2.com/cgi/wiki?AcyclicDependenciesPrinciple">ADP（Acyclic Dependencies Principle）- 无环依赖原则</a> ，包（或服务）之间的依赖结构必须是一个直接的无环图形，也就是说，在依赖结构中不允许出现环（循环依赖）。如果包的依赖形成了环状结构，怎么样打破这种循环依赖呢？</p>
+</li>
+</ul>
+<p>有两种方法可以打破这种循环依赖关系：第一种方法是创建新的包，如果A、B、C形成环路依赖，那么把这些共同类抽出来放在一个新的包D里。这样就把C依赖A变成了C依赖D以及A依赖D，从而打破了循环依赖关系。第二种方法是使用DIP（依赖倒置原则）和ISP（接口分隔原则）设计原则。无环依赖原则（ADP）为我们解决包之间的关系耦合问题。在设计模块时，不能有循环依赖。</p>
+<h2 id="_3">一些软件设计的读物</h2>
+<ul>
+<li>《<a href="https://book.douban.com/subject/26819666/">领域驱动设计</a>》 ，本书是领域驱动设计方面的经典之作。全书围绕着设计和开发实践，结合若干真实的项目案例，向读者阐述如何在真实的软件开发中应用领域驱动设计。书中给出了领域驱动设计的系统化方法，并将人们普遍接受的一些实践综合到一起，融入了作者的见解和经验，展现了一些可扩展的设计新实践、已验证过的技术以及便于应对复杂领域的软件项目开发的基本原则。</li>
+<li>《<a href="https://book.douban.com/subject/1467587/">UNIX编程艺术</a>》 ，这本书主要介绍了Unix系统领域中的设计和开发哲学、思想文化体系、原则与经验，由公认的Unix编程大师、开源运动领袖人物之一埃里克·雷蒙德（Eric S. Raymond）倾力多年写作而成。包括Unix设计者在内的多位领域专家也为本书贡献了宝贵的内容。本书内容涉及社群文化、软件开发设计与实现，覆盖面广、内容深邃，完全展现了作者极其深厚的经验积累和领域智慧。</li>
+<li>《<a href="https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html">Clean Architecture</a>》，如果你读过 《<a href="https://book.douban.com/subject/5442024/">Clean Code</a>》 和 《<a href="https://book.douban.com/subject/11614538/">The Clean Coder</a>》这两本书。你就能猜得到这种 Clean 系列一定也是出自“Bob大叔”之手。没错，就是Bob大叔的心血之作。除了这个网站，《<a href="https://book.douban.com/subject/26915970/">Clean Architecture</a>》也是一本书，这是一本很不错的架构类图书。对软件架构的元素、方法等讲得很清楚。示例都比较简单，并带一些软件变化历史的讲述，很开阔视野。</li>
+<li><a href="https://12factor.net/">The Twelve-Factor App</a> ，如今，软件通常会作为一种服务来交付，它们被称为网络应用程序，或软件即服务（SaaS）。12-Factor 为构建SaaS 应用提供了方法论，这也是架构师必读的文章。（<a href="https://12factor.net/zh_cn/">中译版</a>） 这篇文章在业内的影响力很大，必读！</li>
+<li><a href="https://medium.com/@rdsubhas/10-modern-software-engineering-mistakes-bc67fbef4fc8">Avoid Over Engineering</a> ，有时候，我们会过渡设计我们的系统，过度设计会把我们带到另外一个复杂度上，所以，我们需要一些工程上的平衡。这篇文章是一篇非常不错地告诉你什么是过度设计的文章。</li>
+<li><a href="https://medium.com/@DataStax/instagram-engineerings-3-rules-to-a-scalable-cloud-application-architecture-c44afed31406">Instagram Engineering’s 3 rules to a scalable cloud application architecture</a> ，Instagram 工程的三个黄金法则：1）使用稳定可靠的技术（迎接新的技术）；2）不要重新发明轮子；3）Keep it very simple。我觉得这三条很不错。其实，Amazon也有两条工程法则，一个是自动化，一个是简化。</li>
+<li><a href="https://www.infoq.com/presentations/effective-api-design">How To Design A Good API and Why it Matters - Joshua Bloch</a> ，Google的一个分享，关于如何设计好一个API。</li>
+<li>关于Restful API的设计，你可以学习并借鉴一下下面这些文章。</li>
+<li><a href="https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api">Best Practices for Designing a Pragmatic RESTful API</a></li>
+<li><a href="https://betimdrenica.wordpress.com/2015/03/09/ideal-rest-api-design/">Ideal REST API design</a></li>
+<li><a href="https://github.com/interagent/http-api-design">HTTP API Design Guide</a></li>
+<li><a href="https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md">Microsoft REST API Guidelines</a></li>
+<li><a href="https://github.com/watson-developer-cloud/api-guidelines">IBM Watson REST API Guidelines</a></li>
+<li><a href="https://opensource.zalando.com/restful-api-guidelines/">Zalando RESTful API and Event Scheme Guidelines</a></li>
+<li><a href="https://blog.codinghorror.com/the-problem-with-logging/">The Problem With Logging</a> ，一篇关于程序打日志的短文，可以让你知道一些可能以往不知道的打日志需要注意的问题。</li>
+<li><a href="http://berb.github.io/diploma-thesis/community/index.html">Concurrent Programming for Scalable Web Architectures</a> ，这是一本在线的免费书，教你如何架构一个可扩展的高性能的网站。其中谈到了一些不错的设计方法和知识。</li>
+</ul>
+<h2 id="_4">小结</h2>
+<p>好了，总结一下今天分享的内容。我认为，“品位”不同，是各层次程序员之间最大的区别，这也决定了他们所做出来的软件的质量和价值。因此，我特意撰写了软件设计这一篇章，帮助那些想成长为软件工程师、设计师或架构师的程序员，提高软件设计的品位，进而实现自己的目标。</p>
+<p>虽然很多程序员都忽略了对编程范式的学习，但我觉得学习编程范式其实是非常非常重要的事，能够明白编程的本质和各种语言的编程方式。为此，我推荐了好几份学习资料，帮助你系统化地学习和理解。随后我介绍了DRY-避免重复原则、KISS-简单原则、迪米特法则（又称“最少知识原则”）、 面向对象的S.O.L.I.D原则等多个经典的软件设计原则。</p>
+<p>最后，我精选并推荐了软件设计方面的学习资料，如《领域驱动设计》、《UNIX编程艺术》和《Clean Architecture》等必读好书，以及如何构建SaaS，如何避免过度设计，如何设计API，如何用程序打日志等方面的资料。</p>
+<p>希望这些内容对你有帮助。从下一篇文章开始，我们将进入《程序员练级攻略》的第五个篇章——高手成长篇。敬请期待。</p>
+<p>下面是《程序员练级攻略》系列文章的目录。</p>
+<ul>
+<li><a href="https://time.geekbang.org/column/article/8136">开篇词</a></li>
+<li>入门篇</li>
+<li><a href="https://time.geekbang.org/column/article/8216">零基础启蒙</a></li>
+<li><a href="https://time.geekbang.org/column/article/8217">正式入门</a></li>
+<li>修养篇</li>
+<li><a href="https://time.geekbang.org/column/article/8700">程序员修养</a></li>
+<li>专业基础篇</li>
+<li><a href="https://time.geekbang.org/column/article/8701">编程语言</a></li>
+<li><a href="https://time.geekbang.org/column/article/8887">理论学科</a></li>
+<li><a href="https://time.geekbang.org/column/article/8888">系统知识</a></li>
+<li>软件设计篇</li>
+<li><a href="https://time.geekbang.org/column/article/9369">软件设计</a></li>
+<li>高手成长篇</li>
+<li><a href="https://time.geekbang.org/column/article/9759">Linux系统、内存和网络（系统底层知识）</a></li>
+<li><a href="https://time.geekbang.org/column/article/9851">异步I/O模型和Lock-Free编程（系统底层知识）</a></li>
+<li><a href="https://time.geekbang.org/column/article/10216">Java底层知识</a></li>
+<li><a href="https://time.geekbang.org/column/article/10301">数据库</a></li>
+<li><a href="https://time.geekbang.org/column/article/10603">分布式架构入门（分布式架构）</a></li>
+<li><a href="https://time.geekbang.org/column/article/10604">分布式架构经典图书和论文（分布式架构）</a></li>
+<li><a href="https://time.geekbang.org/column/article/11232">分布式架构工程设计(分布式架构)</a></li>
+<li><a href="https://time.geekbang.org/column/article/11116">微服务</a></li>
+<li><a href="https://time.geekbang.org/column/article/11665">容器化和自动化运维</a></li>
+<li><a href="https://time.geekbang.org/column/article/11669">机器学习和人工智能</a></li>
+<li><a href="https://time.geekbang.org/column/article/12271">前端基础和底层原理（前端方向）</a></li>
+<li><a href="https://time.geekbang.org/column/article/12389">前端性能优化和框架（前端方向）</a></li>
+<li><a href="https://time.geekbang.org/column/article/12486">UI/UX设计（前端方向）</a></li>
+<li><a href="https://time.geekbang.org/column/article/12561">技术资源集散地</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
