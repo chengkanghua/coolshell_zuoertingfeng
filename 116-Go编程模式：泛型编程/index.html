@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -40,8 +37,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -52,7 +49,17 @@
 
     
     
-  </head>
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     <body dir="ltr">
@@ -83,12 +90,12 @@
     <a href=".." title="左耳听风" class="md-header__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,30 +123,30 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -169,7 +176,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -181,13 +188,13 @@
     <a href=".." title="左耳听风" class="md-nav__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     左耳听风
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -3439,7 +3446,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#10-10go" class="md-nav__link">
@@ -3646,7 +3653,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122">
         
           
           <label class="md-nav__link" for="__nav_122" id="__nav_122_label" tabindex="0">
@@ -3676,7 +3683,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -3749,7 +3756,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -3765,7 +3772,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#10-10go" class="md-nav__link">
@@ -3935,18 +3942,18 @@
 <p>我们先来看一个简单的示例：</p>
 <pre><code class="language-go">package main
 
-import &quot;fmt&quot;
+import "fmt"
 
 func print[T any] (arr []T) {
   for _, v := range arr {
     fmt.Print(v)
-    fmt.Print(&quot; &quot;)
+    fmt.Print(" ")
   }
-  fmt.Println(&quot;&quot;)
+  fmt.Println("")
 }
 
 func main() {
-  strs := []string{&quot;Hello&quot;, &quot;World&quot;,  &quot;Generics&quot;}
+  strs := []string{"Hello", "World",  "Generics"}
   decs := []float64{3.14, 1.14, 1.618, 2.718 }
   nums := []int{2,4,6,8}
 
@@ -4007,9 +4014,9 @@ func (s *stack[T]) len() int{
 func (s *stack[T]) print() {
   for _, elem := range *s {
     fmt.Print(elem)
-    fmt.Print(&quot; &quot;)
+    fmt.Print(" ")
   }
-  fmt.Println(&quot;&quot;)
+  fmt.Println("")
 }
 </code></pre>
 <p>上面的这个例子还是比较简单的，不过在实现的过程中，对于一个如果栈为空，那么 <code>top()</code>要么返回<code>error</code>要么返回空值，在这个地方卡了一下。因为，之前，我们返回的“空”值，要么是 int 的<code>0</code>，要么是 string 的 <code>“”</code>，然而在泛型的<code>T</code>下，这个值就不容易搞了。也就是说，除了类型泛型后，还需要有一些“值的泛型”（注：在C++中，如果你要用一个空栈进行 <code>top()</code> 操作，你会得到一个 segmentation fault），所以，这里我们返回的是一个指针，这样可以判断一下指针是否为空。</p>
@@ -4017,11 +4024,11 @@ func (s *stack[T]) print() {
 <pre><code class="language-go">func main() {
 
   ss := stack[string]{}
-  ss.push(&quot;Hello&quot;)
-  ss.push(&quot;Hao&quot;)
-  ss.push(&quot;Chen&quot;)
+  ss.push("Hello")
+  ss.push("Hao")
+  ss.push("Chen")
   ss.print()
-  fmt.Printf(&quot;stack top is - %v\n&quot;, *(ss.top()))
+  fmt.Printf("stack top is - %v\n", *(ss.top()))
   ss.pop()
   ss.pop()
   ss.print()
@@ -4036,7 +4043,7 @@ func (s *stack[T]) print() {
   *ns.top() += 1
   ns.print()
   ns.pop()
-  fmt.Printf(&quot;stack top is - %v\n&quot;, ns.top())
+  fmt.Printf("stack top is - %v\n", ns.top())
 
 }
 </code></pre>
@@ -4114,13 +4121,13 @@ func (l *list[T]) del(data T) {
 
 func (l *list[T]) print() {
   if l.isEmpty() {
-    fmt.Println(&quot;the link list is empty.&quot;)
+    fmt.Println("the link list is empty.")
     return 
   }
   for p := l.head; p != nil; p = p.next {
-    fmt.Printf(&quot;[%v] -&gt; &quot;, p.data)
+    fmt.Printf("[%v] -&gt; ", p.data)
   }
-  fmt.Println(&quot;nil&quot;)
+  fmt.Println("nil")
 }
 </code></pre>
 <p>上面这个代码都是一些比较常规的链表操作，学过链表数据结构的同学应该都不陌生，使用的代码也不难，如下所示，都很简单，看代码就好了。</p>
@@ -4165,14 +4172,14 @@ squares := gMap(nums, func (elem int) int {
 })
 print(squares)  //0 1 4 9 16 25 36 49 64 81 
 
-strs := []string{&quot;Hao&quot;, &quot;Chen&quot;, &quot;MegaEase&quot;}
+strs := []string{"Hao", "Chen", "MegaEase"}
 upstrs := gMap(strs, func(s string) string  {
   return strings.ToUpper(s)
 })
 print(upstrs) // HAO CHEN MEGAEASE 
 
 
-dict := []string{&quot;零&quot;, &quot;壹&quot;, &quot;贰&quot;, &quot;叁&quot;, &quot;肆&quot;, &quot;伍&quot;, &quot;陆&quot;, &quot;柒&quot;, &quot;捌&quot;, &quot;玖&quot;}
+dict := []string{"零", "壹", "贰", "叁", "肆", "伍", "陆", "柒", "捌", "玖"}
 strs =  gMap(nums, func (elem int) string  {
   return  dict[elem]
 })
@@ -4199,7 +4206,7 @@ print(strs) // 零 壹 贰 叁 肆 伍 陆 柒 捌 玖
 sum := gReduce(nums, 0, func (result, elem int) int  {
     return result + elem
 })
-fmt.Printf(&quot;Sum = %d \n&quot;, sum)
+fmt.Printf("Sum = %d \n", sum)
 </code></pre>
 <h5 id="filter">泛型 filter</h5>
 <p>filter函数主要是用来做过滤的，把数据中一些符合条件（filter in）或是不符合条件（filter out）的数据过滤出来，下面是相关的代码示例</p>
@@ -4241,20 +4248,20 @@ print(odds)
 }
 
 var employees = []Employee{
-  {&quot;Hao&quot;, 44, 0, 8000.5},
-  {&quot;Bob&quot;, 34, 10, 5000.5},
-  {&quot;Alice&quot;, 23, 5, 9000.0},
-  {&quot;Jack&quot;, 26, 0, 4000.0},
-  {&quot;Tom&quot;, 48, 9, 7500.75},
-  {&quot;Marry&quot;, 29, 0, 6000.0},
-  {&quot;Mike&quot;, 32, 8, 4000.3},
+  {"Hao", 44, 0, 8000.5},
+  {"Bob", 34, 10, 5000.5},
+  {"Alice", 23, 5, 9000.0},
+  {"Jack", 26, 0, 4000.0},
+  {"Tom", 48, 9, 7500.75},
+  {"Marry", 29, 0, 6000.0},
+  {"Mike", 32, 8, 4000.3},
 }
 </code></pre>
 <p>然后，我们想统一下所有员工的薪水，我们就可以使用前面的reduce函数</p>
 <pre><code class="language-go">total_pay := gReduce(employees, 0.0, func(result float32, e Employee) float32 {
   return result + e.Salary
 })
-fmt.Printf(&quot;Total Salary: %0.2f\n&quot;, total_pay) // Total Salary: 43502.05
+fmt.Printf("Total Salary: %0.2f\n", total_pay) // Total Salary: 43502.05
 </code></pre>
 <p>我们函数这个 <code>gReduce</code> 函数有点啰嗦，还需要传一个初始值，在用户自己的函数中，还要关心 <code>result</code> 我们还是来定义一个更好的版本。</p>
 <p>一般来说，我们用 reduce 函数大多时候基本上是统计求和或是数个数，所以，是不是我们可以定义的更为直接一些？比如下面的这个 <code>CountIf()</code>，就比上面的 Reduce 干净了很多。</p>
@@ -4294,14 +4301,14 @@ func gSum[T any, U Sumable](arr []T, f func(T) U) U {
 <pre><code class="language-go">old := gCountIf(employees, func (e Employee) bool  {
     return e.Age &gt; 40
 })
-fmt.Printf(&quot;old people(&gt;40): %d\n&quot;, old) 
+fmt.Printf("old people(&gt;40): %d\n", old) 
 // ld people(&gt;40): 2
 </code></pre>
 <p><strong>2）统计薪水超过 6000元的员工数</strong></p>
 <pre><code class="language-go">high_pay := gCountIf(employees, func(e Employee) bool {
   return e.Salary &gt;= 6000
 })
-fmt.Printf(&quot;High Salary people(&gt;6k): %d\n&quot;, high_pay) 
+fmt.Printf("High Salary people(&gt;6k): %d\n", high_pay) 
 //High Salary people(&gt;6k): 4
 </code></pre>
 <p><strong>3）统计年龄小于30岁的员工的薪水</strong></p>
@@ -4311,14 +4318,14 @@ fmt.Printf(&quot;High Salary people(&gt;6k): %d\n&quot;, high_pay)
   } 
   return 0
 })
-fmt.Printf(&quot;Total Salary of Young People: %0.2f\n&quot;, younger_pay)
+fmt.Printf("Total Salary of Young People: %0.2f\n", younger_pay)
 //Total Salary of Young People: 19000.00
 </code></pre>
 <p><strong>4）统计全员的休假天数</strong></p>
 <pre><code class="language-go">total_vacation := gSum(employees, func(e Employee) int {
   return e.Vacation
 })
-fmt.Printf(&quot;Total Vacation: %d day(s)\n&quot;, total_vacation)
+fmt.Printf("Total Vacation: %d day(s)\n", total_vacation)
 //Total Vacation: 32 day(s)
 </code></pre>
 <p><strong>5）把没有休假的员工过滤出来</strong></p>
@@ -4385,5 +4392,7 @@ print(no_vacation)
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

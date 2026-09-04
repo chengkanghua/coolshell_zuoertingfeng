@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -40,8 +37,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -52,7 +49,17 @@
 
     
     
-  </head>
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     <body dir="ltr">
@@ -83,12 +90,12 @@
     <a href=".." title="左耳听风" class="md-header__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,30 +123,30 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -169,7 +176,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -181,13 +188,13 @@
     <a href=".." title="左耳听风" class="md-nav__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     左耳听风
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -1036,7 +1043,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#paas" class="md-nav__link">
@@ -3568,7 +3575,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122">
         
           
           <label class="md-nav__link" for="__nav_122" id="__nav_122_label" tabindex="0">
@@ -3598,7 +3605,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -3671,7 +3678,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -3687,7 +3694,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#paas" class="md-nav__link">
@@ -3790,7 +3797,7 @@
 <p>前面讲述的分布式系统关键技术和软件工程的本质，都可以在PaaS平台上得到完全体现。所以，需要一个PaaS平台把那么多的东西给串联起来。这里，我结合自己的认知给你讲一下PaaS相关的东西，并把前面讲过的所有东西做一个总结。</p>
 <h2 id="paas">PaaS平台的本质</h2>
 <p>一个好的PaaS平台应该具有分布式、服务化、自动化部署、高可用、敏捷以及分层开放的特征，并可与IaaS实现良好的联动。</p>
-<p><img alt="00045" src="../img/027-%E6%B4%9E%E6%82%89PaaS%E5%B9%B3%E5%8F%B0%E7%9A%84%E6%9C%AC%E8%B4%A8.assets/00045-1718765741966-59.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/027-%E6%B4%9E%E6%82%89PaaS%E5%B9%B3%E5%8F%B0%E7%9A%84%E6%9C%AC%E8%B4%A8.assets/00045-1718765741966-59.jpeg" data-desc-position="bottom"><img alt="00045" src="../img/027-%E6%B4%9E%E6%82%89PaaS%E5%B9%B3%E5%8F%B0%E7%9A%84%E6%9C%AC%E8%B4%A8.assets/00045-1718765741966-59.jpeg"></a></p>
 <p>下面这三件事是PaaS跟传统中间件最大的差别。</p>
 <ul>
 <li><strong>服务化是PaaS的本质</strong>。软件模块重用，服务治理，对外提供能力是PaaS的本质。</li>
@@ -3799,7 +3806,7 @@
 </ul>
 <h3 id="paas_1">PaaS平台的总体架构</h3>
 <p>从下面的图中可以看到，我用了Docker+Kubernetes层来做了一个“技术缓冲层”。也就是说，如果没有Docker和Kubernetes，构建PaaS将会复杂很多。当然，如果你正在开发一个类似PaaS的平台，那么你会发现自己开发出来的东西会跟Docker和Kubernetes非常像。相信我，最终你还是会放弃自己的轮子而采用Docker+Kubernetes的。</p>
-<p><img alt="00046" src="../img/027-%E6%B4%9E%E6%82%89PaaS%E5%B9%B3%E5%8F%B0%E7%9A%84%E6%9C%AC%E8%B4%A8.assets/00046-1718765757293-61.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/027-%E6%B4%9E%E6%82%89PaaS%E5%B9%B3%E5%8F%B0%E7%9A%84%E6%9C%AC%E8%B4%A8.assets/00046-1718765757293-61.jpeg" data-desc-position="bottom"><img alt="00046" src="../img/027-%E6%B4%9E%E6%82%89PaaS%E5%B9%B3%E5%8F%B0%E7%9A%84%E6%9C%AC%E8%B4%A8.assets/00046-1718765757293-61.jpeg"></a></p>
 <p>在Docker+Kubernetes层之上，我们看到了两个相关的PaaS层。一个是PaaS调度层，很多人将其称为iPaaS；另一个是PaaS能力层，通常被称为aPaaS。没有PaaS调度层，PaaS能力层很难被管理和运维，而没有PaaS能力层，PaaS就失去了提供实际能力的业务价值。而本文更多的是在讲PaaS调度层上的东西。</p>
 <p>在两个相关的PaaS层之上，有一个流量调度的接入模块，这也是PaaS中非常关键的东西。流控、路由、降级、灰度、聚合、串联等等都在这里，包括最新的AWS Lambda Service的小函数等也可以放在这里。这个模块应该是像CDN那样来部署的。</p>
 <p>然后，在这个图的两边分别是与运营和运维相关的。运营这边主要是管理一些软件资源方面的东西（类似Docker Hub和CMDB），以及外部接入和开放平台上的东西，这主要是对外提供能力的相关组件；而运维这边主要是对内的相关东西，主要就是DevOps。</p>
@@ -3814,7 +3821,7 @@
 <p>因为我画的是一个大而全的东西，所以看上去似乎很重很复杂。实际上，其中的很多组件是可以根据自己的需求被简化和裁剪的，而且很多开源软件能帮你简化好多工作。虽然构建PaaS平台看上去很麻烦，但是其实并不是很复杂，不要被我吓到了。哈哈。</p>
 <h3 id="paas_2">PaaS平台的生产和运维</h3>
 <p>下面的图我给出了一个大概的软件生产、运维和服务接入的流程，它把之前的东西都串起来了。</p>
-<p><img alt="00047" src="../img/027-%E6%B4%9E%E6%82%89PaaS%E5%B9%B3%E5%8F%B0%E7%9A%84%E6%9C%AC%E8%B4%A8.assets/00047-1718765766861-63.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/027-%E6%B4%9E%E6%82%89PaaS%E5%B9%B3%E5%8F%B0%E7%9A%84%E6%9C%AC%E8%B4%A8.assets/00047-1718765766861-63.jpeg" data-desc-position="bottom"><img alt="00047" src="../img/027-%E6%B4%9E%E6%82%89PaaS%E5%B9%B3%E5%8F%B0%E7%9A%84%E6%9C%AC%E8%B4%A8.assets/00047-1718765766861-63.jpeg"></a></p>
 <p>从左上开始软件构建，进入软件资产库（Docker Registry+一些软件的定义），然后走DevOps的流程，通过整体架构控制器进入生产环境，生产环境通过控制器操作Docker+Kubernetes集群进行软件部署和生产变更。</p>
 <p>其中，同步服务的运行状态，并通过生命周期管理来拟合状态，如图右侧部分所示。服务运行时的数据会进入到相关应用监控，应用监控中的一些监控事件会同步到生命周期管理中，再由生命周期管理器来做出决定，通过控制器来调度服务运行。当应用监控中心发现流量变化，要进行强制性伸缩时，它通过生命周期管理来通知控制系统进行伸缩。</p>
 <p>左下是服务接入的相关组件，主要是网关服务，以及API聚合编排和流程处理。这对应于之前说过的流量调度和API Gateway的相关功能。</p>
@@ -3913,5 +3920,7 @@
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

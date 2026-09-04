@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -40,8 +37,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -52,7 +49,17 @@
 
     
     
-  </head>
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     <body dir="ltr">
@@ -83,12 +90,12 @@
     <a href=".." title="左耳听风" class="md-header__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,30 +123,30 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -169,7 +176,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -181,13 +188,13 @@
     <a href=".." title="左耳听风" class="md-nav__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     左耳听风
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -3196,7 +3203,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#1-10go" class="md-nav__link">
@@ -3612,7 +3619,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122">
         
           
           <label class="md-nav__link" for="__nav_122" id="__nav_122_label" tabindex="0">
@@ -3642,7 +3649,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -3715,7 +3722,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -3731,7 +3738,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#1-10go" class="md-nav__link">
@@ -3846,7 +3853,7 @@
 
 <h1 id="go">GO编程模式：切片，接口，时间和性能</h1>
 <p><a href="https://coolshell.cn/articles/21128.html">2020年12月18日 </a> <a href="https://coolshell.cn/articles/author/haoel">陈皓</a></p>
-<p><img alt="img" src="../img/107-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%88%87%E7%89%87%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%97%B6%E9%97%B4%E5%92%8C%E6%80%A7%E8%83%BD.assets/go.slices-300x169.png" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/107-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%88%87%E7%89%87%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%97%B6%E9%97%B4%E5%92%8C%E6%80%A7%E8%83%BD.assets/go.slices-300x169.png" data-desc-position="bottom"><img alt="img" src="../img/107-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%88%87%E7%89%87%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%97%B6%E9%97%B4%E5%92%8C%E6%80%A7%E8%83%BD.assets/go.slices-300x169.png"></a></p>
 <p>在本篇文章中，我会对Go语言编程模式的一些基本技术和要点，这样可以让你更容易掌握Go语言编程。其中，主要包括，数组切片的一些小坑，还有接口编程，以及时间和程序运行性能相关的话题。</p>
 <h3 id="1-10go">本文是全系列中第1 / 10篇：<a href="https://coolshell.cn/articles/series/go编程模式">Go编程模式</a></h3>
 <ul>
@@ -3873,7 +3880,7 @@
 }
 </code></pre>
 <p>用图示来看，一个空的slice的表现如下：</p>
-<p><img alt="img" src="../img/107-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%88%87%E7%89%87%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%97%B6%E9%97%B4%E5%92%8C%E6%80%A7%E8%83%BD.assets/slice1-300x190.png" />熟悉C/C++的同学一定会知道，在结构体里用数组指针的问题——数据会发生共享！下面我们来看一下slice的一些操作</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/107-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%88%87%E7%89%87%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%97%B6%E9%97%B4%E5%92%8C%E6%80%A7%E8%83%BD.assets/slice1-300x190.png" data-desc-position="bottom"><img alt="img" src="../img/107-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%88%87%E7%89%87%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%97%B6%E9%97%B4%E5%92%8C%E6%80%A7%E8%83%BD.assets/slice1-300x190.png"></a>熟悉C/C++的同学一定会知道，在结构体里用数组指针的问题——数据会发生共享！下面我们来看一下slice的一些操作</p>
 <pre><code class="language-go">foo = make([]**int**, 5)
 foo[3] = 42
 foo[4] = 100
@@ -3887,7 +3894,7 @@ bar[1] = 99
 <li>然后开始对foo所指向的数组中的索引为3和4的元素进行赋值</li>
 <li>然后，对foo做切片后赋值给bar，再修改bar[1]</li>
 </ul>
-<p><img alt="img" src="../img/107-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%88%87%E7%89%87%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%97%B6%E9%97%B4%E5%92%8C%E6%80%A7%E8%83%BD.assets/slice2.png" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/107-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%88%87%E7%89%87%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%97%B6%E9%97%B4%E5%92%8C%E6%80%A7%E8%83%BD.assets/slice2.png" data-desc-position="bottom"><img alt="img" src="../img/107-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%88%87%E7%89%87%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%97%B6%E9%97%B4%E5%92%8C%E6%80%A7%E8%83%BD.assets/slice2.png"></a></p>
 <p>通过上图我们可以看到，因为foo和bar的内存是共享的，所以，foo和bar的对数组内容的修改都会影响到对方。</p>
 <p>接下来，我们再来看一个数据操作 <code>append()</code> 的示例</p>
 <pre><code class="language-go">a := make([]int, 32)
@@ -3896,27 +3903,27 @@ a = append(a, 1)
 a[2] = 42
 </code></pre>
 <p>上面这段代码中，把 <code>a[1:16]</code> 的切片赋给到了 <code>b</code> ，此时，<code>a</code> 和 <code>b</code> 的内存空间是共享的，然后，对 <code>a</code>做了一个 <code>append()</code>的操作，这个操作会让 <code>a</code> 重新分享内存，导致 <code>a</code> 和 <code>b</code> 不再共享，如下图所示：</p>
-<p><img alt="img" src="../img/107-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%88%87%E7%89%87%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%97%B6%E9%97%B4%E5%92%8C%E6%80%A7%E8%83%BD.assets/go.slices.append-1024x513.png" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/107-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%88%87%E7%89%87%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%97%B6%E9%97%B4%E5%92%8C%E6%80%A7%E8%83%BD.assets/go.slices.append-1024x513.png" data-desc-position="bottom"><img alt="img" src="../img/107-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%88%87%E7%89%87%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%97%B6%E9%97%B4%E5%92%8C%E6%80%A7%E8%83%BD.assets/go.slices.append-1024x513.png"></a></p>
 <p>从上图我们可以看以看到 <code>append()</code>操作让 <code>a</code> 的容量变成了64，而长度是33。这里，需要重点注意一下——<strong><code>append()</code>这个函数在 <code>cap</code> 不够用的时候就会重新分配内存以扩大容量，而如果够用的时候不不会重新分享内存！</strong></p>
 <p>我们再看来看一个例子：</p>
 <pre><code class="language-go">func main() {
-    path := []byte(&quot;AAAA/BBBBBBBBB&quot;)
+    path := []byte("AAAA/BBBBBBBBB")
     sepIndex := bytes.IndexByte(path,'/’)
 
     dir1 := path[:sepIndex]
     dir2 := path[sepIndex+1:]
 
-    fmt.Println(&quot;dir1 =&gt;&quot;,string(dir1)) //prints: dir1 =&gt; AAAA
-    fmt.Println(&quot;dir2 =&gt;&quot;,string(dir2)) //prints: dir2 =&gt; BBBBBBBBB
+    fmt.Println("dir1 =&gt;",string(dir1)) //prints: dir1 =&gt; AAAA
+    fmt.Println("dir2 =&gt;",string(dir2)) //prints: dir2 =&gt; BBBBBBBBB
 
-    dir1 = append(dir1,&quot;suffix&quot;...)
+    dir1 = append(dir1,"suffix"...)
 
-    fmt.Println(&quot;dir1 =&gt;&quot;,string(dir1)) //prints: dir1 =&gt; AAAAsuffix
-    fmt.Println(&quot;dir2 =&gt;&quot;,string(dir2)) //prints: dir2 =&gt; uffixBBBB
+    fmt.Println("dir1 =&gt;",string(dir1)) //prints: dir1 =&gt; AAAAsuffix
+    fmt.Println("dir2 =&gt;",string(dir2)) //prints: dir2 =&gt; uffixBBBB
 }
 </code></pre>
 <p>上面这个例子中，<code>dir1</code> 和 <code>dir2</code> 共享内存，虽然 <code>dir1</code> 有一个 <code>append()</code> 操作，但是因为 cap 足够，于是数据扩展到了<code>dir2</code> 的空间。下面是相关的图示（注意上图中 <code>dir1</code> 和 <code>dir2</code> 结构体中的 <code>cap</code> 和 <code>len</code> 的变化）</p>
-<p><img alt="img" src="../img/107-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%88%87%E7%89%87%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%97%B6%E9%97%B4%E5%92%8C%E6%80%A7%E8%83%BD.assets/slice4-1024x740.png" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/107-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%88%87%E7%89%87%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%97%B6%E9%97%B4%E5%92%8C%E6%80%A7%E8%83%BD.assets/slice4-1024x740.png" data-desc-position="bottom"><img alt="img" src="../img/107-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%88%87%E7%89%87%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%97%B6%E9%97%B4%E5%92%8C%E6%80%A7%E8%83%BD.assets/slice4-1024x740.png"></a></p>
 <p>如果要解决这个问题，我们只需要修改一行代码。</p>
 <pre><code class="language-go">dir1 := path[:sepIndex]
 </code></pre>
@@ -3927,44 +3934,44 @@ a[2] = 42
 <h4 id="_1">深度比较</h4>
 <p>当我们复杂一个对象时，这个对象可以是内建数据类型，数组，结构体，map……我们在复制结构体的时候，当我们需要比较两个结构体中的数据是否相同时，我们需要使用深度比较，而不是只是简单地做浅度比较。这里需要使用到反射 <code>reflect.DeepEqual()</code> ，下面是几个示例</p>
 <pre><code class="language-go">import (
-    &quot;fmt&quot;
-    &quot;reflect&quot;
+    "fmt"
+    "reflect"
 )
 
 func main() {
 
     v1 := data{}
     v2 := data{}
-    fmt.Println(&quot;v1 == v2:&quot;,reflect.DeepEqual(v1,v2))
+    fmt.Println("v1 == v2:",reflect.DeepEqual(v1,v2))
     //prints: v1 == v2: true
 
-    m1 := map[string]string{&quot;one&quot;: &quot;a&quot;,&quot;two&quot;: &quot;b&quot;}
-    m2 := map[string]string{&quot;two&quot;: &quot;b&quot;, &quot;one&quot;: &quot;a&quot;}
-    fmt.Println(&quot;m1 == m2:&quot;,reflect.DeepEqual(m1, m2))
+    m1 := map[string]string{"one": "a","two": "b"}
+    m2 := map[string]string{"two": "b", "one": "a"}
+    fmt.Println("m1 == m2:",reflect.DeepEqual(m1, m2))
     //prints: m1 == m2: true
 
     s1 := []int{1, 2, 3}
     s2 := []int{1, 2, 3}
-    fmt.Println(&quot;s1 == s2:&quot;,reflect.DeepEqual(s1, s2))
+    fmt.Println("s1 == s2:",reflect.DeepEqual(s1, s2))
     //prints: s1 == s2: true
 }
 </code></pre>
 <h4 id="_2">接口编程</h4>
 <p>下面，我们来看段代码，其中是两个方法，它们都是要输出一个结构体，其中一个使用一个函数，另一个使用一个“成员函数”。</p>
 <pre><code class="language-go">func PrintPerson(p *Person) {
-    fmt.Printf(&quot;Name=%s, Sexual=%s, Age=%d\n&quot;,
+    fmt.Printf("Name=%s, Sexual=%s, Age=%d\n",
   p.Name, p.Sexual, p.Age)
 }
 
 func (p *Person) Print() {
-    fmt.Printf(&quot;Name=%s, Sexual=%s, Age=%d\n&quot;,
+    fmt.Printf("Name=%s, Sexual=%s, Age=%d\n",
   p.Name, p.Sexual, p.Age)
 }
 
 func main() {
     var p = Person{
-        Name: &quot;Hao Chen&quot;,
-        Sexual: &quot;Male&quot;,
+        Name: "Hao Chen",
+        Sexual: "Male",
         Age: 44,
     }
 
@@ -3992,8 +3999,8 @@ func (c City) PrintStr() {
     fmt.Println(c.Name)
 }
 
-c1 := Country {&quot;China&quot;}
-c2 := City {&quot;Beijing&quot;}
+c1 := Country {"China"}
+c2 := City {"Beijing"}
 c1.PrintStr()
 c2.PrintStr()
 </code></pre>
@@ -4019,8 +4026,8 @@ func (w WithName) PrintStr() {
     fmt.Println(w.Name)
 }
 
-c1 := Country {WithName{ &quot;China&quot;}}
-c2 := City { WithName{&quot;Beijing&quot;}}
+c1 := Country {WithName{ "China"}}
+c2 := City { WithName{"Beijing"}}
 c1.PrintStr()
 c2.PrintStr()
 </code></pre>
@@ -4037,18 +4044,18 @@ type Stringable interface {
     ToString() string
 }
 func (c Country) ToString() string {
-    return &quot;Country = &quot; + c.Name
+    return "Country = " + c.Name
 }
 func (c City) ToString() string{
-    return &quot;City = &quot; + c.Name
+    return "City = " + c.Name
 }
 
 func PrintStr(p Stringable) {
     fmt.Println(p.ToString())
 }
 
-d1 := Country {&quot;USA&quot;}
-d2 := City{&quot;Los Angeles&quot;}
+d1 := Country {"USA"}
+d2 := City{"Los Angeles"}
 PrintStr(d1)
 PrintStr(d2)
 </code></pre>
@@ -4068,7 +4075,7 @@ func (s* Square) Sides() int {
 }
 func main() {
     s := Square{len: 5}
-    fmt.Printf(&quot;%d\n&quot;,s.Sides())
+    fmt.Printf("%d\n",s.Sides())
 }
 </code></pre>
 <p>我们可以看到 <code>Square</code> 并没有实现 <code>Shape</code> 接口的所有方法，程序虽然可以跑通，但是这样编程的方式并不严谨，如果我们需要强制实现接口的所有方法，那么我们应该怎么办呢？</p>
@@ -4182,5 +4189,7 @@ func main() {
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

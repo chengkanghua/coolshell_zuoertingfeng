@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -40,8 +37,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -52,7 +49,17 @@
 
     
     
-  </head>
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     <body dir="ltr">
@@ -83,12 +90,12 @@
     <a href=".." title="左耳听风" class="md-header__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,30 +123,30 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -169,7 +176,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -181,13 +188,13 @@
     <a href=".." title="左耳听风" class="md-nav__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     左耳听风
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -3481,7 +3488,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122">
         
           
           <label class="md-nav__link" for="__nav_122" id="__nav_122_label" tabindex="0">
@@ -3511,7 +3518,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -3584,7 +3591,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -3638,7 +3645,7 @@
 <p>第三部分：管理</p>
 <p>这些年，我觉得做好技术工作的前提是，得做好技术的管理工作。只有管理好了软件工程和技术团队，技术才能发挥出最大的潜力。大多数的技术问题都是管理上的问题。所以，我会写上一系列的和管理相关的文章，涵盖管理三个要素：团队、项目和管理者自己。比如，人员招聘、绩效考核、提升士气、解决冲突、面对变化、沟通说服、项目管理、任务排期、会议、远程管理，等等。</p>
 <h2 id="_5">课程目录</h2>
-<p><img alt="image-20240615094307885" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/image-20240615094307885.png" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/image-20240615094307885.png" data-desc-position="bottom"><img alt="image-20240615094307885" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/image-20240615094307885.png"></a></p>
 <ul>
 <li>
 <p><a href="https://time.geekbang.org/column/article/11626">致左耳听风专栏40,000名用户</a> </p>
@@ -3653,58 +3660,58 @@
 <p>读者你好！</p>
 <p>我是陈皓，此书单内容整理自我的专栏《左耳听风》中精华内容系列《程序员练级攻略》。经过大量读者申请，极客时间的编辑与我特此梳理，帮助你建立系统的知识体系，整理成书单赠送给大家。</p>
 <p>此清单的完整版本在我的专栏中查看。如需获取所有书籍清单与资料下载地址，同样能到专栏中寻找，每个板块都有详细的跳转链接。</p>
-<p><img alt="b01daa3yyc610061e371e81ddefc1a5e" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/81ddefc1a5e.jpg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/81ddefc1a5e.jpg" data-desc-position="bottom"><img alt="b01daa3yyc610061e371e81ddefc1a5e" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/81ddefc1a5e.jpg"></a></p>
 <p>好的书与不好的书籍，最大的区别就是，好书在任何时间来读，都会有不同程度的收获，而且还会产生更深层次的思考。这些书会帮助你从零开始，一步步地，系统地，从编码到设计再到架构，从码农到程序员再到工程师再到架构师的进阶，实现从普通到精通到卓越的完美转身。</p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/8b17a5a9a73e803262402b4425b39a64.jpg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/8b17a5a9a73e803262402b4425b39a64.jpg" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/8b17a5a9a73e803262402b4425b39a64.jpg"></a></p>
 <h2 id="_7">基础篇</h2>
 <h3 id="_8">零基础启蒙</h3>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/24e75ed38e9d1e589f968d681519b70a.png" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/24e75ed38e9d1e589f968d681519b70a.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/24e75ed38e9d1e589f968d681519b70a.png"></a></p>
 <h3 id="_9">编程入门</h3>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/e63f73d37d8b3c0b27ae7570984ca76c.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/14845ae7643e3f2755c3ba5859146a79.png" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/e63f73d37d8b3c0b27ae7570984ca76c.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/e63f73d37d8b3c0b27ae7570984ca76c.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/14845ae7643e3f2755c3ba5859146a79.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/14845ae7643e3f2755c3ba5859146a79.png"></a></p>
 <h3 id="_10">编程技能</h3>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/6d9b00edb419277f78b92d6d9c658362.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/89b9b5dfbda0a5c7f45ca6fd6b6df1b6.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/04f284d9f093cbe60200eeb151992878.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/b71a93fa22dc070d4c0c0484042bba6f.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/28de0291bb44a8ebd80fa42c85890c80.png" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/6d9b00edb419277f78b92d6d9c658362.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/6d9b00edb419277f78b92d6d9c658362.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/89b9b5dfbda0a5c7f45ca6fd6b6df1b6.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/89b9b5dfbda0a5c7f45ca6fd6b6df1b6.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/04f284d9f093cbe60200eeb151992878.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/04f284d9f093cbe60200eeb151992878.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/b71a93fa22dc070d4c0c0484042bba6f.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/b71a93fa22dc070d4c0c0484042bba6f.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/28de0291bb44a8ebd80fa42c85890c80.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/28de0291bb44a8ebd80fa42c85890c80.png"></a></p>
 <h2 id="_11">理论知识篇</h2>
 <h3 id="algorithms">Algorithms</h3>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/d35fa744a074454305d0693d24f9537c.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/7c82525cdf5a086542b6556cb796c3b8.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/592ba741f58323074567ca6ec5391212.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/703713499d0dd6aade9e6e1414fa7614.png" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/d35fa744a074454305d0693d24f9537c.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/d35fa744a074454305d0693d24f9537c.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/7c82525cdf5a086542b6556cb796c3b8.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/7c82525cdf5a086542b6556cb796c3b8.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/592ba741f58323074567ca6ec5391212.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/592ba741f58323074567ca6ec5391212.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/703713499d0dd6aade9e6e1414fa7614.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/703713499d0dd6aade9e6e1414fa7614.png"></a></p>
 <h3 id="other">Other</h3>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/39f26731b8430f10290b87890706e4fe.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/0d4f32d9fa7860dc7003aed9316dac3c.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/6d757c409321bda72aa99fcc70396f40.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/ba664eadb65c6e01531a5349aa2831ed.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/e4087aee1215976607d16605782cf04e.png" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/39f26731b8430f10290b87890706e4fe.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/39f26731b8430f10290b87890706e4fe.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/0d4f32d9fa7860dc7003aed9316dac3c.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/0d4f32d9fa7860dc7003aed9316dac3c.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/6d757c409321bda72aa99fcc70396f40.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/6d757c409321bda72aa99fcc70396f40.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/ba664eadb65c6e01531a5349aa2831ed.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/ba664eadb65c6e01531a5349aa2831ed.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/e4087aee1215976607d16605782cf04e.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/e4087aee1215976607d16605782cf04e.png"></a></p>
 <h2 id="java">Java篇</h2>
 <h3 id="java_1">Java入门</h3>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/e7332bfa138164c211c61f40f5430c84.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/5ebbdc4ee3efba6cac0ed92c26cac50a.png" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/e7332bfa138164c211c61f40f5430c84.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/e7332bfa138164c211c61f40f5430c84.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/5ebbdc4ee3efba6cac0ed92c26cac50a.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/5ebbdc4ee3efba6cac0ed92c26cac50a.png"></a></p>
 <h3 id="java_2">Java进阶</h3>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/be95e7ed344bb92b1ab3dfc9b4247074.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/b5d1f13a4934bc25b26a9f0de38764c4.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/2938bcac7cd27f2dab80481ab9256c61.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/0834390aa87e064620781740483449f7.png" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/be95e7ed344bb92b1ab3dfc9b4247074.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/be95e7ed344bb92b1ab3dfc9b4247074.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/b5d1f13a4934bc25b26a9f0de38764c4.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/b5d1f13a4934bc25b26a9f0de38764c4.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/2938bcac7cd27f2dab80481ab9256c61.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/2938bcac7cd27f2dab80481ab9256c61.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/0834390aa87e064620781740483449f7.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/0834390aa87e064620781740483449f7.png"></a></p>
 <h2 id="cc">C/C++篇</h2>
 <h3 id="cc_1">C/C++入门</h3>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/cc66d9b91afbed872f665b0bff999b2c.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/b7041a04d368c778739213173343c565.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/1d82debc12ace9bd7daf877cd39d9d8a.png" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/cc66d9b91afbed872f665b0bff999b2c.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/cc66d9b91afbed872f665b0bff999b2c.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/b7041a04d368c778739213173343c565.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/b7041a04d368c778739213173343c565.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/1d82debc12ace9bd7daf877cd39d9d8a.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/1d82debc12ace9bd7daf877cd39d9d8a.png"></a></p>
 <h3 id="cc_2">C/C++进阶</h3>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/36d7c8c75f8e27ac7c6c5fc2212d993a.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/35ff011ff1a67a652b9861a0ba2f7298.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/43281324488f42d3f965a3b243f2fceb.png" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/36d7c8c75f8e27ac7c6c5fc2212d993a.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/36d7c8c75f8e27ac7c6c5fc2212d993a.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/35ff011ff1a67a652b9861a0ba2f7298.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/35ff011ff1a67a652b9861a0ba2f7298.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/43281324488f42d3f965a3b243f2fceb.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/43281324488f42d3f965a3b243f2fceb.png"></a></p>
 <h2 id="go">GO 篇</h2>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/cfa2ab64911fdbd4f1d4a418bba5e569.png" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/cfa2ab64911fdbd4f1d4a418bba5e569.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/cfa2ab64911fdbd4f1d4a418bba5e569.png"></a></p>
 <h2 id="_12">系统知识篇</h2>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/823d12fa217715e337c412a6c877bcef.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/a5f13c0114d9f7fa6490e87c5bd03085.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/5d5850ce30693042d34d1d6d5b620dc5.png" /></p>
-<p><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/a07eeaf64d4f98139495162904520bb3.png" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/823d12fa217715e337c412a6c877bcef.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/823d12fa217715e337c412a6c877bcef.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/a5f13c0114d9f7fa6490e87c5bd03085.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/a5f13c0114d9f7fa6490e87c5bd03085.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/5d5850ce30693042d34d1d6d5b620dc5.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/5d5850ce30693042d34d1d6d5b620dc5.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/000-2%E7%AE%80%E4%BB%8B.assets/a07eeaf64d4f98139495162904520bb3.png" data-desc-position="bottom"><img alt="img" src="../img/000-2%E7%AE%80%E4%BB%8B.assets/a07eeaf64d4f98139495162904520bb3.png"></a></p>
 <p>评论：</p>
 <p>《程序员修练之道》 《人月神话》 《Unix 编程艺术》、《Unix 高级环境编程》的链接呢？</p>
 
@@ -3762,5 +3769,7 @@
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

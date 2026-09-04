@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -40,8 +37,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -52,7 +49,17 @@
 
     
     
-  </head>
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     <body dir="ltr">
@@ -83,12 +90,12 @@
     <a href=".." title="左耳听风" class="md-header__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,30 +123,30 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -169,7 +176,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -181,13 +188,13 @@
     <a href=".." title="左耳听风" class="md-nav__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     左耳听风
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -847,7 +854,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -3612,7 +3619,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122">
         
           
           <label class="md-nav__link" for="__nav_122" id="__nav_122_label" tabindex="0">
@@ -3642,7 +3649,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -3715,7 +3722,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -3731,7 +3738,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -3884,9 +3891,9 @@
 <li>然后在本地把你之前的改动再重新一个一个地做commit，直到全部成功。</li>
 </ol>
 <p>如下图所示。Git 会把 Origin/Master 的远程分支下载下来（紫色的），然后把本地的Master分支上的改动一个一个地提交上去（蓝色的）。</p>
-<p><img alt="00025" src="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00025-1718764913981-21.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00025-1718764913981-21.jpeg" data-desc-position="bottom"><img alt="00025" src="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00025-1718764913981-21.jpeg"></a></p>
 <p>如果有冲突，那么你要先解决冲突，然后做 <code>git rebase --continue</code> 。如下图所示，git在做 pull --rebase 时，会一个一个地应用（apply）本地提交的代码，如果有冲突就会停下来，等你解决冲突。</p>
-<p><img alt="00026" src="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00026-1718764923045-23.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00026-1718764923045-23.jpeg" data-desc-position="bottom"><img alt="00026" src="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00026-1718764923045-23.jpeg"></a></p>
 <h2 id="_2">功能分支协同工作流</h2>
 <p>上面的那种方式有一个问题，就是大家都在一个主干上开发程序，对于小团队或是小项目你可以这么干，但是对比较大的项目或是人比较多的团队，这么干就会有很多问题。</p>
 <p>最大的问题就是代码可能干扰太严重。尤其是，我们想安安静静地开发一个功能时，我们想把各个功能的代码变动隔离开来，同时各个功能又会有多个开发人员在开发。</p>
@@ -3899,7 +3906,7 @@
 <li>其他程序员可以通过<code>git pull --rebase</code>来拿到最新的这个分支的代码。</li>
 <li>最后通过Pull Request的方式做完Code Review后合并到Master分支上。</li>
 </ol>
-<p><img alt="00027" src="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00027-1718764935759-25.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00027-1718764935759-25.jpeg" data-desc-position="bottom"><img alt="00027" src="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00027-1718764935759-25.jpeg"></a></p>
 <p>就像上面这个图显示的一样，紫色的分支就是功能分支，合并后就会像上面这个样子。</p>
 <p>我们可以看到，其实，这种开发也是以服务器为中心的开发，还不是Git分布式开发，它只不过是用分支来完成代码改动的隔离。</p>
 <p>另外，我想提醒一下，为什么会叫“功能分支”，而不是“项目分支”？因为Git的最佳实践希望大家在开发的过程中，快速提交，快速合并，快速完成。这样可以少很多冲突的事，所以叫功能分支。</p>
@@ -3915,7 +3922,7 @@
 <p>为了解决这些问题，GitFlow协同工作流就出来了。</p>
 <p>GitFlow协同工作流是由Vincent Driessen于2010年在A successful Git branching model这篇文章介绍给世人的。</p>
 <p>这个协同工作流的核心思想如下图所示。</p>
-<p><img alt="00028" src="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00028-1718764948840-27.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00028-1718764948840-27.jpeg" data-desc-position="bottom"><img alt="00028" src="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00028-1718764948840-27.jpeg"></a></p>
 <p>整个代码库中一共有五种分支。</p>
 <ul>
 <li>Master分支。也就是主干分支，用作发布环境，上面的每一次提交都是可以发布的。</li>
@@ -3941,7 +3948,7 @@
 <li><a href="http://luci.criosweb.ro/a-real-life-git-workflow-why-git-flow-does-not-work-for-us/">Why git flow does not work for us</a></li>
 </ul>
 <p>其中有个问题就是因为分支太多，所以会出现git log混乱的局面。具体来说，主要是git-flow使用<code>git merge --no-ff</code>来合并分支，在git-flow这样多个分支的环境下会让你的分支管理的log变得很难看。如下所示，左边是使用–no-ff参数在多个分支下的问题。</p>
-<p><img alt="00029" src="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00029-1718764961238-29.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00029-1718764961238-29.jpeg" data-desc-position="bottom"><img alt="00029" src="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00029-1718764961238-29.jpeg"></a></p>
 <p>所谓<code>--no-ff</code>参数的意思是<code>——no fast forward</code>的意思。也就是说，合并的方法不要把这个分支的提交以前置合并的方式，而是留下一个merge的提交。这是把双刃剑，我们希望我们的<code>--no-ff</code>能像右边那样，而不是像左边那样。</p>
 <p>对此的建议是：只有feature合并到developer分支时，使用–no-ff参数，其他的合并都不使用<code>--no-ff</code>参数来做合并。</p>
 <p>另外，还有一个问题就是，在开发得足够快的时候，你会觉得同时维护Master和Developer两个分支是一件很无聊的事，因为这两个分支在大多数情况下都是一样的。包括Release分支，你会觉得创建的这些分支太无聊。</p>
@@ -3964,9 +3971,9 @@
 <h3 id="gitlab-flow">GitLab Flow</h3>
 <p>然而，GitHub Flow这种玩法依然会有好多问题，因为其虽然变得很简单，但是没有把我们的代码和我们的运行环境给联系在一起。所以，GitLab提出了几个优化点。</p>
 <p>其中一个是引入环境分支，如下图所示，其包含了预发布（Pre-Production）和生产（Production）分支。</p>
-<p><img alt="00030" src="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00030-1718764982460-31.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00030-1718764982460-31.jpeg" data-desc-position="bottom"><img alt="00030" src="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00030-1718764982460-31.jpeg"></a></p>
 <p>而有些时候，我们还会有不同版本的发布，所以，还需要有各种release的分支。如下图所示。Master分支是一个roadmap分支，然后，一旦稳定了就建稳定版的分支，如2.3.stable分支和2.4.stable分支，其中可以cherry-pick master分支上的一些改动过去。</p>
-<p><img alt="00031" src="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00031-1718764995777-33.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00031-1718764995777-33.jpeg" data-desc-position="bottom"><img alt="00031" src="../img/020-Git%E5%8D%8F%E5%90%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%EF%BC%8C%E4%BD%A0%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9F.assets/00031-1718764995777-33.jpeg"></a></p>
 <p>这样也就解决了两个问题：</p>
 <ul>
 <li>环境和代码分支对应的问题；</li>
@@ -4056,5 +4063,7 @@
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

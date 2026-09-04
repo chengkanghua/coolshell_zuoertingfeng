@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -40,8 +37,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -52,7 +49,17 @@
 
     
     
-  </head>
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     <body dir="ltr">
@@ -83,12 +90,12 @@
     <a href=".." title="左耳听风" class="md-header__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,30 +123,30 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -169,7 +176,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -181,13 +188,13 @@
     <a href=".." title="左耳听风" class="md-nav__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     左耳听风
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -1684,7 +1691,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -3540,7 +3547,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122">
         
           
           <label class="md-nav__link" for="__nav_122" id="__nav_122_label" tabindex="0">
@@ -3570,7 +3577,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -3643,7 +3650,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -3659,7 +3666,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -3725,7 +3732,7 @@
 </ul>
 <p>我不敢保证有上面这些技术可以解决所有的问题，但是，只要我们设计得当，绝大多数的问题应该是可以扛得住的了。</p>
 <p>下面我画一个图来表示一下。</p>
-<p><img alt="00104" src="../img/051-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E6%80%BB%E7%BB%93%E2%80%9D.assets/00104.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/051-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E6%80%BB%E7%BB%93%E2%80%9D.assets/00104.jpeg" data-desc-position="bottom"><img alt="00104" src="../img/051-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E6%80%BB%E7%BB%93%E2%80%9D.assets/00104.jpeg"></a></p>
 <p>在上面这个图上，我们可以看到，有三大块的东西。</p>
 <ul>
 <li>冗余服务。通过冗余服务的复本数可以消除单点故障。这需要服务发现，负载均衡，动态路由和健康检查四个功能或组件。</li>
@@ -3741,7 +3748,7 @@
 </ul>
 <p>此外，如果你需要一个开发架构来让整个开发团队在同一个标准下开发上面的这些东西，这里，Spring Cloud就是不二之选了。</p>
 <p>关于Spring Cloud和Kubernetes，它们都是为了微服务而生，但它们没有什么可比性，因为，前者偏开发，后者偏运维。我们来看一下它们的差别。</p>
-<p><img alt="00105" src="../img/051-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E6%80%BB%E7%BB%93%E2%80%9D.assets/00105.jpeg" />
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/051-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E6%80%BB%E7%BB%93%E2%80%9D.assets/00105.jpeg" data-desc-position="bottom"><img alt="00105" src="../img/051-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E6%80%BB%E7%BB%93%E2%80%9D.assets/00105.jpeg"></a>
 （图片来自：Deploying Microservices: Spring Cloud vs Kubernetes)</p>
 <p>从上表我们可以得知：</p>
 <ul>
@@ -3749,11 +3756,11 @@
 <li>Kubernetes不是针对语言的，而是针对容器的，所以，它是以通用的方式为所有语言解决分布式计算问题。Kubernetes提供了配置管理、服务发现、负载均衡、跟踪、统计、单实例、平台级和应用栈之外的调度工作。该应用不需要任何客户端逻辑的库或代理程序，可以用任何语言编写。</li>
 </ul>
 <p>下图是微服务所需的关键技术，以及这些技术中在Spring Cloud和Kubernetes的涵盖面。</p>
-<p><img alt="00106" src="../img/051-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E6%80%BB%E7%BB%93%E2%80%9D.assets/00106.jpeg" />
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/051-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E6%80%BB%E7%BB%93%E2%80%9D.assets/00106.jpeg" data-desc-position="bottom"><img alt="00106" src="../img/051-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E6%80%BB%E7%BB%93%E2%80%9D.assets/00106.jpeg"></a>
 （图片来自：Deploying Microservices: Spring Cloud vs Kubernetes)</p>
 <p>两个平台依靠相似的第三方工具，如ELK和EFK stacks, tracing libraries等。Hystrix和Spring Boot等库，在两个环境中都表现良好。很多情况下，Spring Cloud和Kubernetes可以形成互补，组建出更强大的解决方案（例如KubeFlix和Spring Cloud Kubernetes）。</p>
 <p>下图是在Kubernetes上使用Spring Cloud可以表现出来的整体特性。要做出一个可运维的分布式系统，除了在架构上的设计之外，还需要一整套的用来支撑分布式系统的管控系统，也就是所谓的运维系统。要做到这些，不是靠几个人几天就可以完成的。这需要我们根据自己的业务特点来规划相关的实施路径。</p>
-<p><img alt="00107" src="../img/051-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E6%80%BB%E7%BB%93%E2%80%9D.assets/00107.jpeg" />
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/051-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E6%80%BB%E7%BB%93%E2%80%9D.assets/00107.jpeg" data-desc-position="bottom"><img alt="00107" src="../img/051-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E6%80%BB%E7%BB%93%E2%80%9D.assets/00107.jpeg"></a>
 （图片来自：Deploying Microservices: Spring Cloud vs Kubernetes)</p>
 <p>上面这张图中，对于所有的特性，都列举了一些相关的软件和一些设计的重点，其中红色的是运维层面的和Spring Cloud和Kubernetes不相关的，绿色的Spring Cloud提供的开发框架，蓝色的是Kubernetes相关的重要功能。</p>
 <p>从今天看下来，微服务的最佳实践在未来有可能会成为SpringCloud和Kubernetes的天下了。这个让我们拭目以待。</p>
@@ -3842,5 +3849,7 @@
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

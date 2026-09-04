@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -40,8 +37,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -52,7 +49,17 @@
 
     
     
-  </head>
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     <body dir="ltr">
@@ -83,12 +90,12 @@
     <a href=".." title="左耳听风" class="md-header__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,30 +123,30 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -169,7 +176,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -181,13 +188,13 @@
     <a href=".." title="左耳听风" class="md-nav__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     左耳听风
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -3304,7 +3311,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#5-10go" class="md-nav__link">
@@ -3707,7 +3714,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122">
         
           
           <label class="md-nav__link" for="__nav_122" id="__nav_122_label" tabindex="0">
@@ -3737,7 +3744,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -3810,7 +3817,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -3826,7 +3833,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#5-10go" class="md-nav__link">
@@ -4078,18 +4085,18 @@ func MapStrToInt(arr []string, fn func(s string) int) []int {
 </code></pre>
 <p>整个Map函数运行逻辑都很相似，函数体都是在遍历第一个参数的数组，然后，调用第二个参数的函数，然后把其值组合成另一个数组返回。</p>
 <p>于是我们就可以这样使用这两个函数：</p>
-<pre><code class="language-go">var list = []string{&quot;Hao&quot;, &quot;Chen&quot;, &quot;MegaEase&quot;}
+<pre><code class="language-go">var list = []string{"Hao", "Chen", "MegaEase"}
 
 x := MapStrToStr(list, func(s string) string {
     return strings.ToUpper(s)
 })
-fmt.Printf(&quot;%v\n&quot;, x)
-//[&quot;HAO&quot;, &quot;CHEN&quot;, &quot;MEGAEASE&quot;]
+fmt.Printf("%v\n", x)
+//["HAO", "CHEN", "MEGAEASE"]
 
 y := MapStrToInt(list, func(s string) int {
     return len(s)
 })
-fmt.Printf(&quot;%v\n&quot;, y)
+fmt.Printf("%v\n", y)
 //[3, 4, 8]
 </code></pre>
 <p>我们可以看到，我们给第一个 <code>MapStrToStr()</code> 传了函数做的是 转大写，于是出来的数组就成了全大写的，给<code>MapStrToInt()</code> 传的是算其长度，所以出来的数组是每个字符串的长度。</p>
@@ -4103,12 +4110,12 @@ fmt.Printf(&quot;%v\n&quot;, y)
     return sum
 }
 
-var list = []string{&quot;Hao&quot;, &quot;Chen&quot;, &quot;MegaEase&quot;}
+var list = []string{"Hao", "Chen", "MegaEase"}
 
 x := Reduce(list, func(s string) int {
     return len(s)
 })
-fmt.Printf(&quot;%v\n&quot;, x)
+fmt.Printf("%v\n", x)
 // 15
 </code></pre>
 <h5 id="filter"><strong>Filter示例</strong></h5>
@@ -4126,15 +4133,15 @@ var intset = []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 out := Filter(intset, func(n int) bool {
    return n%2 == 1
 })
-fmt.Printf(&quot;%v\n&quot;, out)
+fmt.Printf("%v\n", out)
 
 out = Filter(intset, func(n int) bool {
     return n &gt; 5
 })
-fmt.Printf(&quot;%v\n&quot;, out)
+fmt.Printf("%v\n", out)
 </code></pre>
 <p>下图是一个比喻，其非常形象地说明了Map-Reduce是的业务语义，其在数据处理中非常有用。</p>
-<p><img alt="img" src="../img/111-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9AMap-Reduce.assets/map-reduce.png" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/111-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9AMap-Reduce.assets/map-reduce.png" data-desc-position="bottom"><img alt="img" src="../img/111-Go%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%BC%8F%EF%BC%9AMap-Reduce.assets/map-reduce.png"></a></p>
 <h4 id="_2">业务示例</h4>
 <p>通过上面的一些示例，你可能有一些明白，Map/Reduce/Filter只是一种控制逻辑，真正的业务逻辑是在传给他们的数据和那个函数来定义的。是的，这是一个很经典的“业务逻辑”和“控制逻辑”分离解耦的编程模式。下面我们来看一个有业务意义的代码，来让大家强化理解一下什么叫“控制逻辑”与业务逻辑分离。</p>
 <h5 id="_3">员工信息</h5>
@@ -4147,13 +4154,13 @@ fmt.Printf(&quot;%v\n&quot;, out)
 }
 
 var list = []Employee{
-    {&quot;Hao&quot;, 44, 0, 8000},
-    {&quot;Bob&quot;, 34, 10, 5000},
-    {&quot;Alice&quot;, 23, 5, 9000},
-    {&quot;Jack&quot;, 26, 0, 4000},
-    {&quot;Tom&quot;, 48, 9, 7500},
-    {&quot;Marry&quot;, 29, 0, 6000},
-    {&quot;Mike&quot;, 32, 8, 4000},
+    {"Hao", 44, 0, 8000},
+    {"Bob", 34, 10, 5000},
+    {"Alice", 23, 5, 9000},
+    {"Jack", 26, 0, 4000},
+    {"Tom", 48, 9, 7500},
+    {"Marry", 29, 0, 6000},
+    {"Mike", 32, 8, 4000},
 }
 </code></pre>
 <h5 id="reducefitler">相关的Reduce/Fitler函数</h5>
@@ -4197,21 +4204,21 @@ func EmployeeSumIf(list []Employee, fn func(e *Employee) int) int {
 <pre><code class="language-go">old := EmployeeCountIf(list, func(e *Employee) bool {
     return e.Age &gt; 40
 })
-fmt.Printf(&quot;old people: %d\n&quot;, old)
+fmt.Printf("old people: %d\n", old)
 //old people: 2
 </code></pre>
 <p><strong>2）统计有多少员工薪水大于6000</strong></p>
 <pre><code class="language-go">high_pay := EmployeeCountIf(list, func(e *Employee) bool {
     return e.Salary &gt;= 6000
 })
-fmt.Printf(&quot;High Salary people: %d\n&quot;, high_pay)
+fmt.Printf("High Salary people: %d\n", high_pay)
 //High Salary people: 4
 </code></pre>
 <p><strong>3）列出有没有休假的员工</strong></p>
 <pre><code class="language-go">no_vacation := EmployeeFilterIn(list, func(e *Employee) bool {
     return e.Vacation == 0
 })
-fmt.Printf(&quot;People no vacation: %v\n&quot;, no_vacation)
+fmt.Printf("People no vacation: %v\n", no_vacation)
 //People no vacation: [{Hao 44 0 8000} {Jack 26 0 4000} {Marry 29 0 6000}]
 </code></pre>
 <p><strong>4）统计所有员工的薪资总和</strong></p>
@@ -4219,7 +4226,7 @@ fmt.Printf(&quot;People no vacation: %v\n&quot;, no_vacation)
     return e.Salary
 })
 
-fmt.Printf(&quot;Total Salary: %d\n&quot;, total_pay)
+fmt.Printf("Total Salary: %d\n", total_pay)
 //Total Salary: 43500
 </code></pre>
 <p><strong>5）统计30岁以下员工的薪资总和</strong></p>
@@ -4267,7 +4274,7 @@ fmt.Println(squared_arr)
 upcase := func(s string) string {
   return strings.ToUpper(s)
 }
-strs := []string{&quot;Hao&quot;, &quot;Chen&quot;, &quot;MegaEase&quot;}
+strs := []string{"Hao", "Chen", "MegaEase"}
 upstrs := Map(strs, upcase);
 fmt.Println(upstrs)
 //[HAO CHEN MEGAEASE]
@@ -4300,17 +4307,17 @@ func TransformInPlace(slice, function interface{}) interface{} {
 
 func transform(slice, function interface{}, inPlace bool) interface{} {
 
-  //check the &lt;code data-enlighter-language=&quot;raw&quot; class=&quot;EnlighterJSRAW&quot;&gt;slice&lt;/code&gt; type is Slice
+  //check the &lt;code data-enlighter-language="raw" class="EnlighterJSRAW"&gt;slice&lt;/code&gt; type is Slice
   sliceInType := reflect.ValueOf(slice)
   if sliceInType.Kind() != reflect.Slice {
-    panic(&quot;transform: not slice&quot;)
+    panic("transform: not slice")
   }
 
   //check the function signature
   fn := reflect.ValueOf(function)
   elemType := sliceInType.Type().Elem()
   if !verifyFuncSignature(fn, elemType, nil) {
-    panic(&quot;trasform: function must be of type func(&quot; + sliceInType.Type().Elem().String() + &quot;) outputElemType&quot;)
+    panic("trasform: function must be of type func(" + sliceInType.Type().Elem().String() + ") outputElemType")
   }
 
   sliceOutType := sliceInType
@@ -4378,11 +4385,11 @@ func verifyFuncSignature(fn reflect.Value, types ...reflect.Type) bool {
 </ul>
 <p>好了，有了上面的这段代码，我们的代码就很可以很开心的使用了：</p>
 <p>可以用于字符串数组</p>
-<pre><code class="language-go">list := []string{&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;}
+<pre><code class="language-go">list := []string{"1", "2", "3", "4", "5", "6"}
 result := Transform(list, func(a string) string{
     return a +a +a
 })
-//{&quot;111&quot;,&quot;222&quot;,&quot;333&quot;,&quot;444&quot;,&quot;555&quot;,&quot;666&quot;}
+//{"111","222","333","444","555","666"}
 </code></pre>
 <p>可以用于整形数组</p>
 <pre><code class="language-go">list := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
@@ -4393,11 +4400,11 @@ TransformInPlace(list, func (a int) int {
 </code></pre>
 <p>可以用于结构体</p>
 <pre><code class="language-go">var list = []Employee{
-    {&quot;Hao&quot;, 44, 0, 8000},
-    {&quot;Bob&quot;, 34, 10, 5000},
-    {&quot;Alice&quot;, 23, 5, 9000},
-    {&quot;Jack&quot;, 26, 0, 4000},
-    {&quot;Tom&quot;, 48, 9, 7500},
+    {"Hao", 44, 0, 8000},
+    {"Bob", 34, 10, 5000},
+    {"Alice", 23, 5, 9000},
+    {"Jack", 26, 0, 4000},
+    {"Tom", 48, 9, 7500},
 }
 
 result := TransformInPlace(list, func(e Employee) Employee {
@@ -4411,7 +4418,7 @@ result := TransformInPlace(list, func(e Employee) Employee {
 <pre><code class="language-go">func Reduce(slice, pairFunc, zero interface{}) interface{} {
   sliceInType := reflect.ValueOf(slice)
   if sliceInType.Kind() != reflect.Slice {
-    panic(&quot;reduce: wrong type, not slice&quot;)
+    panic("reduce: wrong type, not slice")
   }
 
   len := sliceInType.Len()
@@ -4425,7 +4432,7 @@ result := TransformInPlace(list, func(e Employee) Employee {
   fn := reflect.ValueOf(pairFunc)
   if !verifyFuncSignature(fn, elemType, elemType, elemType) {
     t := elemType.String()
-    panic(&quot;reduce: function must be of type func(&quot; + t + &quot;, &quot; + t + &quot;) &quot; + t)
+    panic("reduce: function must be of type func(" + t + ", " + t + ") " + t)
   }
 
   var ins [2]reflect.Value
@@ -4451,8 +4458,8 @@ result := TransformInPlace(list, func(e Employee) Employee {
 func FilterInPlace(slicePtr, function interface{}) {
   in := reflect.ValueOf(slicePtr)
   if in.Kind() != reflect.Ptr {
-    panic(&quot;FilterInPlace: wrong type, &quot; +
-      &quot;not a pointer to slice&quot;)
+    panic("FilterInPlace: wrong type, " +
+      "not a pointer to slice")
   }
   _, n := filter(in.Elem().Interface(), function, true)
   in.Elem().SetLen(n)
@@ -4464,13 +4471,13 @@ func filter(slice, function interface{}, inPlace bool) (interface{}, int) {
 
   sliceInType := reflect.ValueOf(slice)
   if sliceInType.Kind() != reflect.Slice {
-    panic(&quot;filter: wrong type, not a slice&quot;)
+    panic("filter: wrong type, not a slice")
   }
 
   fn := reflect.ValueOf(function)
   elemType := sliceInType.Type().Elem()
   if !verifyFuncSignature(fn, elemType, boolType) {
-    panic(&quot;filter: function must be of type func(&quot; + elemType.String() + &quot;) bool&quot;)
+    panic("filter: function must be of type func(" + elemType.String() + ") bool")
   }
 
   var which []int
@@ -4555,5 +4562,7 @@ func filter(slice, function interface{}, inPlace bool) (interface{}, int) {
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

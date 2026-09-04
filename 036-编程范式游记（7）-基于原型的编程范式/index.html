@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -40,8 +37,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -52,7 +49,17 @@
 
     
     
-  </head>
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     <body dir="ltr">
@@ -83,12 +90,12 @@
     <a href=".." title="左耳听风" class="md-header__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,30 +123,30 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -169,7 +176,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -181,13 +188,13 @@
     <a href=".." title="左耳听风" class="md-nav__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     左耳听风
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -1279,7 +1286,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#javascript" class="md-nav__link">
@@ -3551,7 +3558,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122">
         
           
           <label class="md-nav__link" for="__nav_122" id="__nav_122_label" tabindex="0">
@@ -3581,7 +3588,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -3654,7 +3661,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -3670,7 +3677,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#javascript" class="md-nav__link">
@@ -3736,7 +3743,7 @@
 <h2 id="javascript">JavaScript的原型概念</h2>
 <p>这里，我们主要以JavaScript举例，面向对象里面要有个Class。但是JavaScript觉得不是这样的，它就是要基于原型编程，就不要Class，就直接在对象上改就行了，基于编程的修改，直接对类型进行修改。</p>
 <p>我们先来看一个示例。</p>
-<pre><code>var foo = {name: &quot;foo&quot;, one: 1, two: 2};
+<pre><code>var foo = {name: "foo", one: 1, two: 2};
 
 var bar = {three: 3};
 </code></pre>
@@ -3752,9 +3759,9 @@ bar.one // Resolves to 1.
 bar.three // Resolves to 3.
 
 // Own properties shadow prototype properties
-bar.name = &quot;bar&quot;;
-foo.name; // unaffected, resolves to &quot;foo&quot;
-bar.name; // Resolves to &quot;bar&quot;
+bar.name = "bar";
+foo.name; // unaffected, resolves to "foo"
+bar.name; // Resolves to "bar"
 </code></pre>
 <p>需要解释一下JavaScript的两个东西，一个是 <code>__proto__</code>，另一个是 <code>prototype</code>，这两个东西很容易混淆。这里说明一下：</p>
 <ul>
@@ -3786,7 +3793,7 @@ b.calculate(30); // 60
 c.calculate(40); // 80
 </code></pre>
 <p>其中的“原型链”如下所示：</p>
-<p><img alt="00068" src="../img/036-%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E6%B8%B8%E8%AE%B0%EF%BC%887%EF%BC%89-%E5%9F%BA%E4%BA%8E%E5%8E%9F%E5%9E%8B%E7%9A%84%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F.assets/00068-1719386771607-19.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/036-%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E6%B8%B8%E8%AE%B0%EF%BC%887%EF%BC%89-%E5%9F%BA%E4%BA%8E%E5%8E%9F%E5%9E%8B%E7%9A%84%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F.assets/00068-1719386771607-19.jpeg" data-desc-position="bottom"><img alt="00068" src="../img/036-%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E6%B8%B8%E8%AE%B0%EF%BC%887%EF%BC%89-%E5%9F%BA%E4%BA%8E%E5%8E%9F%E5%9E%8B%E7%9A%84%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F.assets/00068-1719386771607-19.jpeg"></a></p>
 <p>注意：ES5 中，规定原型继承需要使用 <code>Object.create()</code> 函数。如下所示：</p>
 <pre><code>var b = Object.create(a, {y: {value: 20}});
 var c = Object.create(a, {y: {value: 30}});
@@ -3814,7 +3821,7 @@ b.calculate(30); // 60
 c.calculate(40); // 80
 </code></pre>
 <p>那么，在内存中的布局是怎么样的呢？大概是下面这个样子。</p>
-<p><img alt="00069" src="../img/036-%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E6%B8%B8%E8%AE%B0%EF%BC%887%EF%BC%89-%E5%9F%BA%E4%BA%8E%E5%8E%9F%E5%9E%8B%E7%9A%84%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F.assets/00069-1719386781798-21.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/036-%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E6%B8%B8%E8%AE%B0%EF%BC%887%EF%BC%89-%E5%9F%BA%E4%BA%8E%E5%8E%9F%E5%9E%8B%E7%9A%84%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F.assets/00069-1719386781798-21.jpeg" data-desc-position="bottom"><img alt="00069" src="../img/036-%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F%E6%B8%B8%E8%AE%B0%EF%BC%887%EF%BC%89-%E5%9F%BA%E4%BA%8E%E5%8E%9F%E5%9E%8B%E7%9A%84%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F.assets/00069-1719386781798-21.jpeg"></a></p>
 <p>这个图应该可以让你很好地看明白 <code>__proto__</code> 和 <code>prototype</code> 的差别了。</p>
 <p>我们可以测试一下：</p>
 <pre><code>b.__proto__ === Foo.prototype, // true
@@ -3838,13 +3845,13 @@ b.__proto__.calculate === Foo.prototype.calculate // true
 <pre><code>function Person(){}
 var p = new Person();
 
-Person.prototype.name = &quot;Hao Chen&quot;;
+Person.prototype.name = "Hao Chen";
 Person.prototype.sayHello = function(){
-    console.log(&quot;Hi, I am &quot; + this.name);
+    console.log("Hi, I am " + this.name);
 }
 
-console.log(p.name); // &quot;Hao Chen&quot;
-p.sayHello(); // &quot;Hi, I am Hao Chen&quot;
+console.log(p.name); // "Hao Chen"
+p.sayHello(); // "Hi, I am Hao Chen"
 </code></pre>
 <p>在上面这个例子中：</p>
 <ul>
@@ -3867,10 +3874,10 @@ var Person = function (fullName, email) {
   this.email = email;
 
   this.speak = function(){
-    console.log(&quot;I speak English!&quot;);
+    console.log("I speak English!");
   };
   this.introduction = function(){
-    console.log(&quot;Hi, I am &quot; + this.fullName);
+    console.log("Hi, I am " + this.fullName);
   };
 }
 </code></pre>
@@ -3890,16 +3897,16 @@ var Student = function(fullName, email, school, courses) {
   this.school = school;
   this.courses = courses;
 
-  // override the &quot;introduction&quot; method
+  // override the "introduction" method
   this.introduction= function(){
-    console.log(&quot;Hi, I am &quot; + this.fullName + 
-                &quot;. I am a student of &quot; + this.school + 
-                &quot;, I study &quot;+ this.courses +&quot;.&quot;);
+    console.log("Hi, I am " + this.fullName + 
+                ". I am a student of " + this.school + 
+                ", I study "+ this.courses +".");
   };
 
-  // Add a &quot;exams&quot; method
+  // Add a "exams" method
   this.takeExams = function(){
-    console.log(&quot;This is my exams time!&quot;);
+    console.log("This is my exams time!");
   };
 };
 </code></pre>
@@ -3919,14 +3926,14 @@ var Student = function(fullName, email, school, courses) {
 // from Person.prototype.
 Student.prototype = Object.create(Person.prototype); 
 
-// Set the &quot;constructor&quot; property to refer to Student
+// Set the "constructor" property to refer to Student
 Student.prototype.constructor = Student;
 </code></pre>
 <p>这样，我们就可以这样使用了。</p>
-<pre><code>var student = new Student(&quot;Hao Chen&quot;, 
-                          &quot;haoel@hotmail.com&quot;,
-                          &quot;XYZ University&quot;, 
-                          &quot;Computer Science&quot;);
+<pre><code>var student = new Student("Hao Chen", 
+                          "haoel@hotmail.com",
+                          "XYZ University", 
+                          "Computer Science");
 student.introduction();   
 student.speak();       
 student.takeExams(); 
@@ -4012,5 +4019,7 @@ console.log(student instanceof Student); // true
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

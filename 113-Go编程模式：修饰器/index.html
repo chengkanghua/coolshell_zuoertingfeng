@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -40,8 +37,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -52,7 +49,17 @@
 
     
     
-  </head>
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     <body dir="ltr">
@@ -83,12 +90,12 @@
     <a href=".." title="左耳听风" class="md-header__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,30 +123,30 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -169,7 +176,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -181,13 +188,13 @@
     <a href=".." title="左耳听风" class="md-nav__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     左耳听风
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -3358,7 +3365,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#7-10go" class="md-nav__link">
@@ -3579,7 +3586,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122">
         
           
           <label class="md-nav__link" for="__nav_122" id="__nav_122_label" tabindex="0">
@@ -3609,7 +3616,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -3682,7 +3689,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -3698,7 +3705,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#7-10go" class="md-nav__link">
@@ -3803,14 +3810,14 @@
 <p>我们先来看一个示例：</p>
 <pre><code class="language-go">package main
 
-import &quot;fmt&quot;
+import "fmt"
 
 func decorator(f func(s string)) func(s string) {
 
     return func(s string) {
-        fmt.Println(&quot;Started&quot;)
+        fmt.Println("Started")
         f(s)
-        fmt.Println(&quot;Done&quot;)
+        fmt.Println("Done")
     }
 }
 
@@ -3819,22 +3826,22 @@ func Hello(s string) {
 }
 
 func main() {
-        decorator(Hello)(&quot;Hello, World!&quot;)
+        decorator(Hello)("Hello, World!")
 }
 </code></pre>
 <p>我们可以看到，我们动用了一个高阶函数 <code>decorator()</code>，在调用的时候，先把 <code>Hello()</code> 函数传进去，然后其返回一个匿名函数，这个匿名函数中除了运行了自己的代码，也调用了被传入的 <code>Hello()</code> 函数。</p>
 <p>这个玩法和 Python 的异曲同工，只不过，有些遗憾的是，Go 并不支持像 Python 那样的 <code>@decorator</code> 语法糖。所以，在调用上有些难看。当然，如果你要想让代码容易读一些，你可以这样：</p>
 <pre><code class="language-go">hello := decorator(Hello)
-hello(&quot;Hello&quot;)
+hello("Hello")
 </code></pre>
 <p>我们再来看一个和计算运行时间的例子：</p>
 <pre><code class="language-go">package main
 
 import (
-  &quot;fmt&quot;
-  &quot;reflect&quot;
-  &quot;runtime&quot;
-  &quot;time&quot;
+  "fmt"
+  "reflect"
+  "runtime"
+  "time"
 )
 
 type SumFunc func(int64, int64) int64
@@ -3847,7 +3854,7 @@ func timedSumFunc(f SumFunc) SumFunc {
   return func(start, end int64) int64 {
 
     defer func(t time.Time) {
-      fmt.Printf(&quot;--- Time Elapsed (%s): %v ---\n&quot;, 
+      fmt.Printf("--- Time Elapsed (%s): %v ---\n", 
           getFunctionName(f), time.Since(t))
     }(time.Now())
 
@@ -3879,7 +3886,7 @@ func main() {
   sum1 := timedSumFunc(Sum1)
   sum2 := timedSumFunc(Sum2)
 
-  fmt.Printf(&quot;%d, %d\n&quot;, sum1(-10000, 10000000), sum2(-10000, 10000000))
+  fmt.Printf("%d, %d\n", sum1(-10000, 10000000), sum2(-10000, 10000000))
 }
 </code></pre>
 <p>关于上面的代码，有几个事说明一下：</p>
@@ -3898,30 +3905,30 @@ func main() {
 <pre><code class="language-go">package main
 
 import (
-    &quot;fmt&quot;
-    &quot;log&quot;
-    &quot;net/http&quot;
-    &quot;strings&quot;
+    "fmt"
+    "log"
+    "net/http"
+    "strings"
 )
 
 func WithServerHeader(h http.HandlerFunc) http.HandlerFunc {
     return func(w http.ResponseWriter, r *http.Request) {
-        log.Println(&quot;---&gt;WithServerHeader()&quot;)
-        w.Header().Set(&quot;Server&quot;, &quot;HelloServer v0.0.1&quot;)
+        log.Println("---&gt;WithServerHeader()")
+        w.Header().Set("Server", "HelloServer v0.0.1")
         h(w, r)
     }
 }
 
 func hello(w http.ResponseWriter, r *http.Request) {
-    log.Printf(&quot;Recieved Request %s from %s\n&quot;, r.URL.Path, r.RemoteAddr)
-    fmt.Fprintf(w, &quot;Hello, World! &quot;+r.URL.Path)
+    log.Printf("Recieved Request %s from %s\n", r.URL.Path, r.RemoteAddr)
+    fmt.Fprintf(w, "Hello, World! "+r.URL.Path)
 }
 
 func main() {
-    http.HandleFunc(&quot;/v1/hello&quot;, WithServerHeader(hello))
-    err := http.ListenAndServe(&quot;:8080&quot;, nil)
+    http.HandleFunc("/v1/hello", WithServerHeader(hello))
+    err := http.ListenAndServe(":8080", nil)
     if err != nil {
-        log.Fatal(&quot;ListenAndServe: &quot;, err)
+        log.Fatal("ListenAndServe: ", err)
     }
 }
 </code></pre>
@@ -3930,24 +3937,24 @@ func main() {
 <pre><code class="language-go">package main
 
 import (
-    &quot;fmt&quot;
-    &quot;log&quot;
-    &quot;net/http&quot;
-    &quot;strings&quot;
+    "fmt"
+    "log"
+    "net/http"
+    "strings"
 )
 
 func WithServerHeader(h http.HandlerFunc) http.HandlerFunc {
     return func(w http.ResponseWriter, r *http.Request) {
-        log.Println(&quot;---&gt;WithServerHeader()&quot;)
-        w.Header().Set(&quot;Server&quot;, &quot;HelloServer v0.0.1&quot;)
+        log.Println("---&gt;WithServerHeader()")
+        w.Header().Set("Server", "HelloServer v0.0.1")
         h(w, r)
     }
 }
 
 func WithAuthCookie(h http.HandlerFunc) http.HandlerFunc {
     return func(w http.ResponseWriter, r *http.Request) {
-        log.Println(&quot;---&gt;WithAuthCookie()&quot;)
-        cookie := &amp;http.Cookie{Name: &quot;Auth&quot;, Value: &quot;Pass&quot;, Path: &quot;/&quot;}
+        log.Println("---&gt;WithAuthCookie()")
+        cookie := &amp;http.Cookie{Name: "Auth", Value: "Pass", Path: "/"}
         http.SetCookie(w, cookie)
         h(w, r)
     }
@@ -3955,9 +3962,9 @@ func WithAuthCookie(h http.HandlerFunc) http.HandlerFunc {
 
 func WithBasicAuth(h http.HandlerFunc) http.HandlerFunc {
     return func(w http.ResponseWriter, r *http.Request) {
-        log.Println(&quot;---&gt;WithBasicAuth()&quot;)
-        cookie, err := r.Cookie(&quot;Auth&quot;)
-        if err != nil || cookie.Value != &quot;Pass&quot; {
+        log.Println("---&gt;WithBasicAuth()")
+        cookie, err := r.Cookie("Auth")
+        if err != nil || cookie.Value != "Pass" {
             w.WriteHeader(http.StatusForbidden)
             return
         }
@@ -3967,31 +3974,31 @@ func WithBasicAuth(h http.HandlerFunc) http.HandlerFunc {
 
 func WithDebugLog(h http.HandlerFunc) http.HandlerFunc {
     return func(w http.ResponseWriter, r *http.Request) {
-        log.Println(&quot;---&gt;WithDebugLog&quot;)
+        log.Println("---&gt;WithDebugLog")
         r.ParseForm()
         log.Println(r.Form)
-        log.Println(&quot;path&quot;, r.URL.Path)
-        log.Println(&quot;scheme&quot;, r.URL.Scheme)
-        log.Println(r.Form[&quot;url_long&quot;])
+        log.Println("path", r.URL.Path)
+        log.Println("scheme", r.URL.Scheme)
+        log.Println(r.Form["url_long"])
         for k, v := range r.Form {
-            log.Println(&quot;key:&quot;, k)
-            log.Println(&quot;val:&quot;, strings.Join(v, &quot;&quot;))
+            log.Println("key:", k)
+            log.Println("val:", strings.Join(v, ""))
         }
         h(w, r)
     }
 }
 func hello(w http.ResponseWriter, r *http.Request) {
-    log.Printf(&quot;Recieved Request %s from %s\n&quot;, r.URL.Path, r.RemoteAddr)
-    fmt.Fprintf(w, &quot;Hello, World! &quot;+r.URL.Path)
+    log.Printf("Recieved Request %s from %s\n", r.URL.Path, r.RemoteAddr)
+    fmt.Fprintf(w, "Hello, World! "+r.URL.Path)
 }
 
 func main() {
-    http.HandleFunc(&quot;/v1/hello&quot;, WithServerHeader(WithAuthCookie(hello)))
-    http.HandleFunc(&quot;/v2/hello&quot;, WithServerHeader(WithBasicAuth(hello)))
-    http.HandleFunc(&quot;/v3/hello&quot;, WithServerHeader(WithBasicAuth(WithDebugLog(hello))))
-    err := http.ListenAndServe(&quot;:8080&quot;, nil)
+    http.HandleFunc("/v1/hello", WithServerHeader(WithAuthCookie(hello)))
+    http.HandleFunc("/v2/hello", WithServerHeader(WithBasicAuth(hello)))
+    http.HandleFunc("/v3/hello", WithServerHeader(WithBasicAuth(WithDebugLog(hello))))
+    err := http.ListenAndServe(":8080", nil)
     if err != nil {
-        log.Fatal(&quot;ListenAndServe: &quot;, err)
+        log.Fatal("ListenAndServe: ", err)
     }
 }
 </code></pre>
@@ -4009,7 +4016,7 @@ func Handler(h http.HandlerFunc, decors ...HttpHandlerDecorator) http.HandlerFun
 }
 </code></pre>
 <p>然后，我们就可以像下面这样使用了。</p>
-<pre><code class="language-go">http.HandleFunc(&quot;/v4/hello&quot;, Handler(hello,
+<pre><code class="language-go">http.HandleFunc("/v4/hello", Handler(hello,
                 WithServerHeader, WithBasicAuth, WithDebugLog))
 </code></pre>
 <p>这样的代码是不是更易读了一些？pipeline 的功能也就出来了。</p>
@@ -4025,9 +4032,9 @@ func Handler(h http.HandlerFunc, decors ...HttpHandlerDecorator) http.HandlerFun
 
     v := reflect.MakeFunc(targetFunc.Type(),
             func(in []reflect.Value) (out []reflect.Value) {
-                fmt.Println(&quot;before&quot;)
+                fmt.Println("before")
                 out = targetFunc.Call(in)
-                fmt.Println(&quot;after&quot;)
+                fmt.Println("after")
                 return
             })
 
@@ -4044,12 +4051,12 @@ func Handler(h http.HandlerFunc, decors ...HttpHandlerDecorator) http.HandlerFun
 <p>这样写是不是有些二？的确是的。不过，这是我个人在 Go 语言里所能写出来的最好的的代码了。如果你知道更多优雅的，请你一定告诉我！</p>
 <p>好的，让我们来看一下使用效果。首先假设我们有两个需要修饰的函数：</p>
 <pre><code class="language-go">func foo(a, b, c int) int {
-    fmt.Printf(&quot;%d, %d, %d \n&quot;, a, b, c)
+    fmt.Printf("%d, %d, %d \n", a, b, c)
     return a + b + c
 }
 
 func bar(a, b string) string {
-    fmt.Printf(&quot;%s, %s \n&quot;, a, b)
+    fmt.Printf("%s, %s \n", a, b)
     return a + b
 }
 </code></pre>
@@ -4063,7 +4070,7 @@ myfoo(1, 2, 3)
 <p>嗯。如果你不想声明函数签名，那么你也可以这样</p>
 <pre><code class="language-go">mybar := bar
 Decorator(&amp;mybar, bar)
-mybar(&quot;hello,&quot;, &quot;world!&quot;)
+mybar("hello,", "world!")
 </code></pre>
 <p>好吧，看上去不是那么的漂亮，但是 it works。看样子 Go 语言目前本身的特性无法做成像 Java 或 Python 那样，对此，我们只能多求 Go 语言多放糖了！</p>
 <p>Again， 如果你有更好的写法，请你一定要告诉我。</p>
@@ -4123,5 +4130,7 @@ mybar(&quot;hello,&quot;, &quot;world!&quot;)
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -40,8 +37,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -52,7 +49,17 @@
 
     
     
-  </head>
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     <body dir="ltr">
@@ -83,12 +90,12 @@
     <a href=".." title="左耳听风" class="md-header__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,30 +123,30 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -169,7 +176,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -181,13 +188,13 @@
     <a href=".." title="左耳听风" class="md-nav__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     左耳听风
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -1630,7 +1637,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -3623,7 +3630,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122">
         
           
           <label class="md-nav__link" for="__nav_122" id="__nav_122_label" tabindex="0">
@@ -3653,7 +3660,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -3726,7 +3733,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -3742,7 +3749,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -3898,27 +3905,27 @@
 <p>这个算法足够的简单粗暴。</p>
 <h3 id="_4">队列算法</h3>
 <p>在这个算法下，请求的速度可以是波动的，而处理的速度则是非常均速的。这个算法其实有点像一个FIFO的算法。</p>
-<p><img alt="00096" src="../img/049-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%99%90%E6%B5%81%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00096.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/049-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%99%90%E6%B5%81%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00096.jpeg" data-desc-position="bottom"><img alt="00096" src="../img/049-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%99%90%E6%B5%81%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00096.jpeg"></a></p>
 <p>在上面这个FIFO的队列上，我们可以扩展出一些别的玩法。</p>
 <p>一个是有优先级的队列，处理时先处理高优先级的队列，然后再处理低优先级的队列。 如下图所示，只有高优先级的队列被处理完成后，才会处理低优先级的队列。</p>
-<p><img alt="00097" src="../img/049-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%99%90%E6%B5%81%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00097.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/049-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%99%90%E6%B5%81%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00097.jpeg" data-desc-position="bottom"><img alt="00097" src="../img/049-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%99%90%E6%B5%81%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00097.jpeg"></a></p>
 <p>有优先级的队列可能会导致低优先级队列长时间得不到处理。为了避免低优先级的队列被饿死，一般来说是分配不同比例的处理时间到不同的队列上，于是我们有了带权重的队列。</p>
 <p>如下图所示。有三个队列的权重分布是3:2:1，这意味着我们需要在权重为3的这个队列上处理3个请求后，再去权重为2的队列上处理2个请求，最后再去权重为1的队列上处理1个请求，如此反复。</p>
-<p><img alt="00098" src="../img/049-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%99%90%E6%B5%81%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00098.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/049-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%99%90%E6%B5%81%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00098.jpeg" data-desc-position="bottom"><img alt="00098" src="../img/049-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%99%90%E6%B5%81%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00098.jpeg"></a></p>
 <p>队列流控是以队列的的方式来处理请求。如果处理过慢，那么就会导致队列满，而开始触发限流。</p>
 <p>但是，这样的算法需要用队列长度来控制流量，在配置上比较难操作。如果队列过长，导致后端服务在队列没有满时就挂掉了。一般来说，这样的模型不能做push，而是pull方式会好一些。</p>
 <h3 id="leaky-bucket">漏斗算法 Leaky Bucket</h3>
 <p>漏斗算法可以参看Wikipedia的相关词条 <a href="https://en.wikipedia.org/wiki/Leaky_bucket">Leaky Bucket</a>。</p>
 <p>下图是一个<a href="https://www.slideshare.net/vimal25792/leaky-bucket-tocken-buckettraffic-shaping">漏斗算法的示意图</a> 。</p>
-<p><img alt="00099" src="../img/049-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%99%90%E6%B5%81%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00099.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/049-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%99%90%E6%B5%81%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00099.jpeg" data-desc-position="bottom"><img alt="00099" src="../img/049-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%99%90%E6%B5%81%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00099.jpeg"></a></p>
 <p>我们可以看到，就像一个漏斗一样，进来的水量就好像访问流量一样，而出去的水量就像是我们的系统处理请求一样。当访问流量过大时这个漏斗中就会积水，如果水太多了就会溢出。</p>
 <p>一般来说，这个“漏斗”是用一个队列来实现的，当请求过多时，队列就会开始积压请求，如果队列满了，就会开拒绝请求。很多系统都有这样的设计，比如TCP。当请求的数量过多时，就会有一个sync backlog的队列来缓冲请求，或是TCP的滑动窗口也是用于流控的队列。</p>
-<p><img alt="00100" src="../img/049-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%99%90%E6%B5%81%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00100.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/049-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%99%90%E6%B5%81%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00100.jpeg" data-desc-position="bottom"><img alt="00100" src="../img/049-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%99%90%E6%B5%81%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00100.jpeg"></a></p>
 <p>我们可以看到，漏斗算法其实就是在队列请求中加上一个限流器，来让Processor以一个均匀的速度处理请求。</p>
 <h3 id="token-bucket">令牌桶算法Token Bucket</h3>
 <p>关于令牌桶算法，主要是有一个中间人。在一个桶内按照一定的速率放入一些token，然后，处理程序要处理请求时，需要拿到token，才能处理；如果拿不到，则不处理。</p>
 <p>下面这个图很清楚地说明了这个算法。</p>
-<p><img alt="00101" src="../img/049-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%99%90%E6%B5%81%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00101.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/049-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%99%90%E6%B5%81%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00101.jpeg" data-desc-position="bottom"><img alt="00101" src="../img/049-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%99%90%E6%B5%81%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00101.jpeg"></a></p>
 <p>从理论上来说，令牌桶的算法和漏斗算法不一样的是，漏斗算法中，处理请求是以一个常量和恒定的速度处理的，而令牌桶算法则是在流量小的时候“攒钱”，流量大的时候，可以快速处理。</p>
 <p>然而，我们可能会问，Processor的处理速度因为有队列的存在，所以其总是能以最大处理能力来处理请求，这也是我们所希望的方式。因此，令牌桶和漏斗都是受制于Processor的最大处理能力。无论令牌桶里有多少令牌，也无论队列中还有多少请求。总之，Processor在大流量来临时总是按照自己最大的处理能力来处理的。</p>
 <p>但是，试想一下，如果我们的Processor只是一个非常简单的任务分配器，比如像Nginx这样的基本没有什么业务逻辑的网关，那么它的处理速度一定很快，不会有什么瓶颈，而其用来把请求转发给后端服务，那么在这种情况下，这两个算法就有不一样的情况了。</p>
@@ -4062,5 +4069,7 @@
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

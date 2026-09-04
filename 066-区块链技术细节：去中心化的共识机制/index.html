@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -40,8 +37,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -52,7 +49,17 @@
 
     
     
-  </head>
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     <body dir="ltr">
@@ -83,12 +90,12 @@
     <a href=".." title="左耳听风" class="md-header__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,30 +123,30 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -169,7 +176,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -181,13 +188,13 @@
     <a href=".." title="左耳听风" class="md-nav__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     左耳听风
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -2089,7 +2096,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -3584,7 +3591,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122">
         
           
           <label class="md-nav__link" for="__nav_122" id="__nav_122_label" tabindex="0">
@@ -3614,7 +3621,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -3687,7 +3694,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -3703,7 +3710,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -3829,12 +3836,12 @@
 <ul>
 <li>一种叫Challenge-Response协议，用于Client-Server。如图所示，如果Client需要使用服务，那么需要被Challenge去花费一些资源。如果证明自己的资源已被花费了，则通过认证，授权使用。</li>
 </ul>
-<p><img alt="00146" src="../img/066-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6.assets/00146-1719388294270-71.jpeg" />
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/066-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6.assets/00146-1719388294270-71.jpeg" data-desc-position="bottom"><img alt="00146" src="../img/066-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6.assets/00146-1719388294270-71.jpeg"></a>
 （图片来源：<a href="https://en.wikipedia.org/wiki/Proof-of-work_system">Wikipedia</a>)</p>
 <ul>
 <li>另一种叫Solution-Verification协议，用于验证使用。Hashcash就是这种协议。下图可以帮助你更形象地理解。</li>
 </ul>
-<p><img alt="00147" src="../img/066-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6.assets/00147-1719388301558-73.jpeg" />
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/066-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6.assets/00147-1719388301558-73.jpeg" data-desc-position="bottom"><img alt="00147" src="../img/066-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6.assets/00147-1719388301558-73.jpeg"></a>
 （图片来源：<a href="https://en.wikipedia.org/wiki/Proof-of-work_system">Wikipedia</a>)</p>
 <p>通过前面的描述，可以得知，我们需要为用户记录的交易是不能被修改的，所以使用hash方法为每个账本做了“签名”，还把其不断地打包再hash形成merkle root，然后再形成一个串链。于是，修改一个地方就会导致所有地方的“签名（hash值）”都需要跟着一起修改，于是形成了复杂度。</p>
 <p>然而，这样的复杂度对于计算机来说并不高，找上一台或是几台主流点的电脑，分分钟就破解掉了。因为hash运维这个事对于计算机来说，是一件非常高效根本不费事的事。</p>
@@ -3866,7 +3873,7 @@
 <li>第一个好处很明显。不需要那么费劲的挖矿了。那样浪费电力不环保地挖矿的确有点太糟糕了。PoS很明显地解决了这个问题。</li>
 <li>在P2P这种无中心化的网络下，如果你要控制整个网络，就需要超过半数以上的能力。在PoW下，你需要51%的算力。在今天，这会是一个非常大的成本。但是我们看一下，下面的全球比特币的算力图，我们发现只要前四家公司联合起来作弊，就可以完成对比特币的攻击（据说中国有60%左右的算力，看来只要中国政府愿意，要拿下比特币也不是什么难事，呵呵）。而在PoS下，你需要有51%的财富，你才可以发起攻击，这相对于算力而言需要更多的成本。设想一下，你得拥有51%的比特币，你才能黑了比特币，然而，如果你有51%的财富，你为什么要黑了这个系统，自己把自己干死呢？这就是博弈论。</li>
 </ol>
-<p><img alt="00148" src="../img/066-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6.assets/00148-1719388313768-75.jpeg" />
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/066-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6.assets/00148-1719388313768-75.jpeg" data-desc-position="bottom"><img alt="00148" src="../img/066-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6.assets/00148-1719388313768-75.jpeg"></a>
 （图片来自：http://qukuai.com/pools )</p>
 <h2 id="pos">PoS机制潜在的问题</h2>
 <p>世界上没有免费的午餐，也没有绝对完美的事，所以PoS也有其潜在的问题。最明显的一个问题就是，当不需要太多算力的时候，如果账本出现分叉的情况，也就是系统出现两个冲突且合法的区块的时候，在比特币这种算力密集的PoW机制下，所有的矿工必需赌其中一个分支往下走。</p>
@@ -3905,7 +3912,7 @@
 <p>无论怎么样，人类社会进化的影子在去中心化的社会中又开始出现了。那么，另一个逻辑问题来了，如果这种"去中心化的社会"本质上是在重复一遍"中心化"的演进过程，那么，还有什么意义？</p>
 <p>上面的这个逻辑问题我们留到最后，这里还是看一下技术方面的事儿。</p>
 <p>我们都知道，分布式系统的CAP原则，在一致性、可用性和分区容忍性上只能三选两。在区块链的P2P网络下也是很类似的，在去中心化、安全和高性能中，我们也只能选两个。</p>
-<p><img alt="00149" src="../img/066-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6.assets/00149-1719388415263-77.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/066-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6.assets/00149-1719388415263-77.jpeg" data-desc-position="bottom"><img alt="00149" src="../img/066-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6.assets/00149-1719388415263-77.jpeg"></a></p>
 <ul>
 <li>如果我们想要一个既安全，性能也很高的系统，那么得放弃去中心化的架构，如DPoS这样的中心化系统，直接放弃区块链走传统的中心化架构。</li>
 <li>如果我们想要一个去中心化和安全的系统，主要去挖矿，那么放弃高性能。这就是目前的比特币架构。</li>
@@ -3975,5 +3982,7 @@
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

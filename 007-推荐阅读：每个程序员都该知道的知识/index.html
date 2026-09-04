@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -40,8 +37,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -52,7 +49,17 @@
 
     
     
-  </head>
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     <body dir="ltr">
@@ -83,12 +90,12 @@
     <a href=".." title="左耳听风" class="md-header__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,30 +123,30 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -169,7 +176,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -181,13 +188,13 @@
     <a href=".." title="左耳听风" class="md-nav__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     左耳听风
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -496,7 +503,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -3573,7 +3580,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122">
         
           
           <label class="md-nav__link" for="__nav_122" id="__nav_122_label" tabindex="0">
@@ -3603,7 +3610,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -3676,7 +3683,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -3692,7 +3699,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -3849,22 +3856,22 @@
 <h2 id="_3">编程语言和代码质量的研究报告</h2>
 <p><strong><a href="https://cacm.acm.org/magazines/2017/10/221326-a-large-scale-study-of-programming-languages-and-code-quality-in-github/">A Large-Scale Study of Programming Languages and Code Quality in GitHub</a></strong>，编程语言和代码质量的研究报告。</p>
 <p>这是一项有趣的研究。有四个人从GitHub上分析了728个项目，6300万行代码，近3万个提交人，150万次commits，以及17种编程语言（如下图所示），他们想找到编程语言对软件质量的影响。</p>
-<p><img alt="00007" src="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00007-1718417723392-1.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00007-1718417723392-1.jpeg" data-desc-position="bottom"><img alt="00007" src="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00007-1718417723392-1.jpeg"></a></p>
 <p>然后，他们还对编程语言做了一个分类，想找到不同类型的编程语言的bug问题。如下图所示：</p>
-<p><img alt="00008" src="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00008-1718417736443-3.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00008-1718417736443-3.jpeg" data-desc-position="bottom"><img alt="00008" src="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00008-1718417736443-3.jpeg"></a></p>
 <p>以及，他们还对这众多的开源软件做了个聚类，如下图：</p>
-<p><img alt="00009" src="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00009-1718417746570-5.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00009-1718417746570-5.jpeg" data-desc-position="bottom"><img alt="00009" src="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00009-1718417746570-5.jpeg"></a></p>
 <p>对bug的类型也做了一个聚类，如下图：</p>
-<p><img alt="00010" src="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00010-1718417756126-7.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00010-1718417756126-7.jpeg" data-desc-position="bottom"><img alt="00010" src="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00010-1718417756126-7.jpeg"></a></p>
 <p>其中分析的方法我不多说了。我们来看一下相关的结果。</p>
 <p>首先，他们得出来的第一个结果是，从查看 bug fix的commits的次数情况来看，C、C++、Objective-C、PHP和Python中有很多很多的commits都是和bug fix相关的，而Clojure、Haskell、Ruby、Scala在bug fix的commits的数上明显要少很多。</p>
 <p>下图是各个编程语言的bug情况。如果你看到是正数，说明高于平均水平，如果你看到是负数，则是低于平均水平。</p>
-<p><img alt="00011" src="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00011-1718417765451-9.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00011-1718417765451-9.jpeg" data-desc-position="bottom"><img alt="00011" src="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00011-1718417765451-9.jpeg"></a></p>
 <p>第二个结论是，函数式编程语言的bug明显比大多数其它语言要好很多。有隐式类型转换的语言明显产生的bug数要比强类型的语言要少很多。函数式的静态类型的语言要比函数式的动态类型语言的程序出bug的可能性要小很多。</p>
 <p>第三，研究者想搞清是否bug数会和软件的领域相关。比如，业务型、中间件型、框架、lib，或是数据库。研究表明，并没有什么相关性。下面这个图是各个语言在不同领域的bug率。</p>
-<p><img alt="00012" src="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00012-1718417778556-11.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00012-1718417778556-11.jpeg" data-desc-position="bottom"><img alt="00012" src="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00012-1718417778556-11.jpeg"></a></p>
 <p>第四，研究人员想搞清楚bug的类型是否会和语言有关系。的确如此，bug的类型和语言是强相关性的。下图是各个语言在不同的bug类型的情况。如果你看到的是正数，说明高于平均水平，如果你看到的是负数，则是低于平均水平。</p>
-<p><img alt="00013" src="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00013-1718417786861-13.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00013-1718417786861-13.jpeg" data-desc-position="bottom"><img alt="00013" src="../img/007-%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A%E6%AF%8F%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E9%83%BD%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E7%9F%A5%E8%AF%86.assets/00013-1718417786861-13.jpeg"></a></p>
 <p>也许，这份报告可以在你评估编程语言时有一定的借鉴作用。</p>
 <h2 id="c">电子书：《C++软件性能优化》</h2>
 <p><strong><a href="http://agner.org/optimize/optimizing_cpp.pdf">Optimizing Software in C++ - Agner Fog</a></strong> - PDF，C++软件性能优化。</p>
@@ -3932,5 +3939,7 @@
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

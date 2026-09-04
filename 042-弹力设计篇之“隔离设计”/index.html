@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -40,8 +37,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -52,7 +49,17 @@
 
     
     
-  </head>
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     <body dir="ltr">
@@ -83,12 +90,12 @@
     <a href=".." title="左耳听风" class="md-header__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,30 +123,30 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -169,7 +176,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -181,13 +188,13 @@
     <a href=".." title="左耳听风" class="md-nav__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     左耳听风
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -1441,7 +1448,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -3562,7 +3569,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122">
         
           
           <label class="md-nav__link" for="__nav_122" id="__nav_122_label" tabindex="0">
@@ -3592,7 +3599,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -3665,7 +3672,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -3681,7 +3688,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -3746,15 +3753,15 @@
 
 <h1 id="42-">42-弹力设计篇之“隔离设计”</h1>
 <p>隔离设计对应的单词是Bulkheads，中文翻译为隔板。但其实，这个术语是用在造船上的，也就是船舱里防漏水的隔板。一般的船无论大小都会有这个东西，大一点的船都会把船舱隔成若干个空间。这样，如果船舱漏水，只会进到一个小空间里，不会让整个船舱都进水而导致整艘船都沉了，如下图所示。</p>
-<p><img alt="00082" src="../img/042-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%9A%94%E7%A6%BB%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00082-1720146988310-9.jpeg" /></p>
-<p><img alt="00083" src="../img/042-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%9A%94%E7%A6%BB%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00083-1720146994483-11.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/042-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%9A%94%E7%A6%BB%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00082-1720146988310-9.jpeg" data-desc-position="bottom"><img alt="00082" src="../img/042-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%9A%94%E7%A6%BB%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00082-1720146988310-9.jpeg"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/042-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%9A%94%E7%A6%BB%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00083-1720146994483-11.jpeg" data-desc-position="bottom"><img alt="00083" src="../img/042-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%9A%94%E7%A6%BB%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00083-1720146994483-11.jpeg"></a></p>
 <p>我们的软件设计当然也“漏水”，所以为了不让“故障”蔓延开来，需要使用“隔板”技术，来将架构分隔成多个“船舱”来隔离故障。</p>
 <p>多扯一句，著名的泰坦尼克号也有Bulkheads设计，然而其设计上有个缺陷。如下图所示，当其撞上冰山漏水时，因为船体倾斜，导致水漫过了隔板，从而下沉了。</p>
-<p><img alt="00084" src="../img/042-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%9A%94%E7%A6%BB%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00084-1720147004788-13.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/042-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%9A%94%E7%A6%BB%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00084-1720147004788-13.jpeg" data-desc-position="bottom"><img alt="00084" src="../img/042-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%9A%94%E7%A6%BB%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00084-1720147004788-13.jpeg"></a></p>
 <p>在分布式软件架构中，我们同样需要使用类似的技术来让我们的故障得到隔离。这就需要我们对系统进行分离。一般来说，对于系统的分离有两种方式，一种是以服务的种类来做分离，一种是以用户来做分离。下面具体说明一下这两种方式。</p>
 <h2 id="_1">按服务的种类来做分离</h2>
 <p>下面这个图中，说明了按服务种类来做分离的情况。</p>
-<p><img alt="00085" src="../img/042-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%9A%94%E7%A6%BB%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00085-1720147012326-15.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/042-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%9A%94%E7%A6%BB%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00085-1720147012326-15.jpeg" data-desc-position="bottom"><img alt="00085" src="../img/042-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%9A%94%E7%A6%BB%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00085-1720147012326-15.jpeg"></a></p>
 <p>上图中，我们将系统分成了用户、商品、社区三个板块。这三个块分别使用不同的域名、服务器和数据库，做到从接入层到应用层再到数据层三层完全隔离。这样一来，在物理上来说，一个板块的故障就不会影响到另一板块。</p>
 <p>在亚马逊，每个服务都有自己的一个数据库，每个数据库中都保存着和这个业务相关的数据和相应的处理状态。而每个服务从一开始就准备好了对外暴露。同时，这也是微服务所推荐的架构方式。</p>
 <p>然而任何架构都有其好和不好的地方，上面这种架构虽然在系统隔离上做得比较好，但是也存在以下一些问题。</p>
@@ -3783,7 +3790,7 @@
 <p>可见，隔离了的系统在具体的业务场景中还是有很多问题的，是需要我们小心和处理的。对此，我们不可掉以轻心。根据我的经验，这样的系统通常会引入大量的异步处理模型。</p>
 <h2 id="_2">按用户的请求来做分离</h2>
 <p>下图是一个按用户请求来做分离的图示。</p>
-<p><img alt="00086" src="../img/042-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%9A%94%E7%A6%BB%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00086-1720518964825-17.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/042-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%9A%94%E7%A6%BB%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00086-1720518964825-17.jpeg" data-desc-position="bottom"><img alt="00086" src="../img/042-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%9A%94%E7%A6%BB%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00086-1720518964825-17.jpeg"></a></p>
 <p>在这个图中，可以看到，我们将用户分成不同的组，并把后端的同一个服务根据这些不同的组分成不同的实例。让同一个服务对于不同的用户进行冗余和隔离，这样一来，当服务实例挂掉时，只会影响其中一部分用户，而不会导致所有的用户无法访问。</p>
 <p>这种分离和上面按功能的分离可以融合。说白了，这就是所谓的“多租户”模式。对于一些比较大的客户，我们可以为他们设置专门独立的服务实例，或是服务集群与其他客户隔离开来，对于一些比较小的用户来说，可以让他们共享一个服务实例，这样可以节省相关的资源。</p>
 <p>对于“多租户”的架构来说，会引入一些系统设计的复杂度。一方面，如果完全隔离，资源使用上会比较浪费，如果共享，又会导致程序设计的一些复杂度。</p>
@@ -3794,7 +3801,7 @@
 <li>共享的服务，共享的数据分区。每个租户的数据和服务都是共享的。</li>
 </ol>
 <p>这三种方案各有优缺点，如图所示。</p>
-<p><img alt="00087" src="../img/042-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%9A%94%E7%A6%BB%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00087-1720518973277-19.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/042-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%9A%94%E7%A6%BB%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00087-1720518973277-19.jpeg" data-desc-position="bottom"><img alt="00087" src="../img/042-%E5%BC%B9%E5%8A%9B%E8%AE%BE%E8%AE%A1%E7%AF%87%E4%B9%8B%E2%80%9C%E9%9A%94%E7%A6%BB%E8%AE%BE%E8%AE%A1%E2%80%9D.assets/00087-1720518973277-19.jpeg"></a></p>
 <p>通过上图，可以看到：</p>
 <ul>
 <li>如果使用完全独立的方案，在开发实现上和资源隔离度方面会非常好，然而，成本会比较高，计算资源也会有一定的浪费。</li>
@@ -3897,5 +3904,7 @@
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

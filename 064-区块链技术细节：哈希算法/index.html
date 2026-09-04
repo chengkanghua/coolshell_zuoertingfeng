@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -40,8 +37,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -52,7 +49,17 @@
 
     
     
-  </head>
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     <body dir="ltr">
@@ -83,12 +90,12 @@
     <a href=".." title="左耳听风" class="md-header__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,30 +123,30 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -169,7 +176,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -181,13 +188,13 @@
     <a href=".." title="左耳听风" class="md-nav__button md-logo" aria-label="左耳听风" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     左耳听风
   </label>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -2035,7 +2042,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#hash" class="md-nav__link">
@@ -3551,7 +3558,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_122">
         
           
           <label class="md-nav__link" for="__nav_122" id="__nav_122_label" tabindex="0">
@@ -3581,7 +3588,7 @@
   
 
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
                 
@@ -3654,7 +3661,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -3670,7 +3677,7 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#hash" class="md-nav__link">
@@ -3730,7 +3737,7 @@
 <li>前一个数据块的地址。</li>
 </ul>
 <p>这样，通过追溯前一个块的地址，把所有的数据块存成了一条链。所以，我们叫其BlockChain。如下图所示。</p>
-<p><img alt="00134" src="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00134-1719388066926-45.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00134-1719388066926-45.jpeg" data-desc-position="bottom"><img alt="00134" src="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00134-1719388066926-45.jpeg"></a></p>
 <p>每个数据块的“地址”的编码使用了计算机上的一个算法，计算机圈内人士把这个算法叫Secure Hash。有人音译为“安全哈希”，也有人意译为“安全散列”。在计算机应用中，hash算法主要有几个功能。</p>
 <ul>
 <li>用来生成唯一标识一个数据块的ID（身份证），这个ID几乎不能重复。</li>
@@ -3745,7 +3752,7 @@
 </ul>
 <p>于是，我们就可以利用hash算法的这个特性来对数据做"数字签名"。也就是说，我将"数据"和其"签名"（hash计算值）一起发布，这样可以让收到方来验证数据有没有被修改。</p>
 <p>我们再来看上面那个区块链的图。</p>
-<p><img alt="00134" src="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00134-1719388081780-47.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00134-1719388081780-47.jpeg" data-desc-position="bottom"><img alt="00134" src="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00134-1719388081780-47.jpeg"></a></p>
 <p>对于第一块数据，我们把其“数据集”和“前数据块的hash值 00000a6cba”一起做hash值，得到本区块的地址000007cabfa。然后，下一个区块会把自己的数据和000007cabfa一起做hash，得到000008acbed这个哈希值……如此往复下去。</p>
 <p>根据“被hash的数据中有一个bit被修改了，整个hash就完全不一样了”这个特性，我们知道：</p>
 <ul>
@@ -3755,7 +3762,7 @@
 <p>在这样的连锁反应下，你想要偷偷修改一个bit的难度一下就提高很多。所以，在区块链的世界里，越老的区块越安全也越不容易被人篡改，越新的区块越不安全也越容易被人篡改。</p>
 <h2 id="hash">比特币的hash算法</h2>
 <p>下面我来简单介绍一下，比特币中区块链的一些细节。下图是区块链的协议格式。</p>
-<p><img alt="00135" src="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00135-1719388092970-49.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00135-1719388092970-49.jpeg" data-desc-position="bottom"><img alt="00135" src="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00135-1719388092970-49.jpeg"></a></p>
 <p>其中Version，Previous Block Hash，Merkle Root，Timestamp，Difficulty Target 和Nonce这六个数据字段是区块链的区块数据协议头。后面的数据是交易数据，分别是：本块中的交易笔数H和交易列表（最多不能超过1MB，为什么是1MB，后面会说）。</p>
 <p>下面我来说一下区块头中的那六个字段的含义。</p>
 <ul>
@@ -3774,10 +3781,10 @@
 <p>前面说到过，可以简单地将Merkle Root理解为交易的hash值。这里，我们具体说一下，比特币的Merkle Root是怎么计算出来的。</p>
 <p>首先，我们知道，比特币的每一笔交易会有三个字段，一个是转出方，一个是转入方，还有一个是金额。那么，我们会对每个交易的这三个字段求hash，然后把交易的hash做两两合并，再求其hash，直到算出最后一个hash值，这就是我们的Merkle Root。</p>
 <p>我画了一个图展示一下这个过程。</p>
-<p><img alt="00136" src="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00136-1719388102205-51.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00136-1719388102205-51.jpeg" data-desc-position="bottom"><img alt="00136" src="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00136-1719388102205-51.jpeg"></a></p>
 <p>上面的示意图中有四笔交易，A和B的hash成了Hash-AB， C和D的hash成了Hash-CD，然后再做Hash-AB + Hash-CD 的hash，得到了Hash-ABCD，这就是Merkle Root。整个过程就像一个二叉树一样。</p>
 <p>下图是一个区块链的示意图，来自<a href="https://bitcoin.org/bitcoin.pdf">比特币的白皮书</a>。</p>
-<p><img alt="00137" src="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00137-1719388113633-53.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00137-1719388113633-53.jpeg" data-desc-position="bottom"><img alt="00137" src="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00137-1719388113633-53.jpeg"></a></p>
 <p>为什么要这样做呢？为什么不是把所有的交易都放在一起做一次hash呢？这不也可以让人无法篡改吗？这样做的好处是——我们把交易数据分成了若干个组。就像上面那个二叉树所表示的一样，我们可以不断地把这个树分成左边的分支和右边的分支，因为它们都被计算过hash值，所以可以很快地校验其中的内容有没有被修改过。</p>
 <p>这至少带来三个好处。</p>
 <ol>
@@ -3797,10 +3804,10 @@
 <p>在比特币中，一个交易可以有多个output，也就是说我可以把一笔钱汇给多个人，但一个output只能对应一个源的input，还有一个条件就是，output跟input的总数要吻合。</p>
 <p>这里举个例子。假设，Fred给了Alice 2个比特币，Ted给了Alice 3个比特币，这个时候，Alice有5个比特币。然而，大比特币的世界里是没有余额的，所以，对于Alice来说，她只有两个没有花出去的交易，一个是2个比特币，一个是3个比特币。这在比特币中叫UTXO（Unspent Transaction Output）。</p>
 <p>此时，如果Alice想要转给Bob 4个比特币，她发现自己的两个交易中都不够，也不能拆开之前的那两个比特币交易，那么她只能把交易2和交易3当成input，然后把自己和Bob当成output，Bob分得4个，她自己分1个。这样的交易才平衡。</p>
-<p><img alt="00138" src="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00138-1719388122523-55.jpeg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00138-1719388122523-55.jpeg" data-desc-position="bottom"><img alt="00138" src="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00138-1719388122523-55.jpeg"></a></p>
 <p>于是，一笔交易可能会包含大量的Input和Output。因为比特币没有“余额”的概念，所以需要通过多个input来凑，然后output这边还需要给自己找零，给矿工小费。</p>
 <p>这样一来，在比特币交易中，你把钱给了我，我又给了张三，张三给了李四……就这样传递下去，形成了一个交易链。因为还没有花出去，所以就成了UTXO，而系统计算你有没有钱可以汇出去时，只需要查看一下你的UTXO就可以了。</p>
-<p><img alt="00139" src="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00139-1719388130780-57.jpeg" />
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00139-1719388130780-57.jpeg" data-desc-position="bottom"><img alt="00139" src="../img/064-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%EF%BC%9A%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95.assets/00139-1719388130780-57.jpeg"></a>
 (图片来源：https://bitcoin.org/en/developer-guide )</p>
 <p>UTXO因为没有账户和余额的概念，所以可以并行进行多笔交易。假如你有多个UTXO，你可以进行多笔交易而不需要并行锁。然后其还有匿名性的特征，你可以隐藏自己的交易目的地（通过设置的多个output），而且没有余额意味着是没有状态的。要知道你有多少个比特币，只需要把UTXO的交易记录统计一下就可以知道了。但这也让人比较费解，而且也不利于应用上的开发。以太坊则使用了余额的方式。</p>
 <p>在这篇文章中，我先讲述了什么是区块链以及它的核心原理是什么。随后分享了比特币的hash算法，以及Merkle Root是如何计算出来的。最后，介绍了比特币的交易模型。希望对你有帮助。（<strong>这篇文章中图片很多，很难用音频体现出来，所以没有录制音频，还望谅解。</strong>）</p>
@@ -3868,5 +3875,7 @@
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
